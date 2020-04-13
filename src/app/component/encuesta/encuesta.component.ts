@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from "@angular/forms";
+import {Router} from "@angular/router";
+
 
 
 @Component({
@@ -8,29 +10,53 @@ import { FormBuilder, Validators } from "@angular/forms";
   styleUrls: ['./encuesta.component.css']
 })
 export class EncuestaComponent  {
+datos:any[]=[];
+cubierto: boolean;
+checkoutForm: any;
 
-  isSubmitted = false;
+  zona: any[]=[
+    {id:"1", comunidad:"Andalucía "},
+    {id:"2", comunidad:"Aragón "},
+    {id:"3", comunidad:"Asturias "},
+    {id:"4", comunidad:"Baleares "},
+    {id:"5", comunidad:"Canarias "},
+    {id:"6", comunidad:"Cantabria "},
+    {id:"7", comunidad:"Castilla-La Mancha "},
+    {id:"8", comunidad:"Castilla y León "},
+    {id:"9", comunidad:"Cataluña "},
+    {id:"10", comunidad:"Extramadura "},
+    {id:"11", comunidad:"Galicia "},
+    {id:"12", comunidad:"La Rioja "},
+    {id:"13", comunidad:"Madrid "},
+    {id:"14", comunidad:"Murcia "},
+    {id:"15", comunidad:"Navarra "},
+    {id:"16", comunidad:"Pais Vasco "},
+    {id:"17", comunidad:"Comunidad Valenciana "}
+  ];
 
-  constructor(public fb: FormBuilder) { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private router:Router) { 
+ this.checkoutForm = this.formBuilder.group({
+   zonas:''
 
-  /*########### Form ###########*/
-  registrationForm = this.fb.group({
-    gender: ['male', [Validators.required]]
-  })
+  
 
-  // Getter method to access form control
-  get myForm() {
-    return this.registrationForm.get('gender');
-  }
+    });
 
-  // Submit Registration Form
-  onSubmit() {
-    this.isSubmitted = true;
-    if(!this.registrationForm.valid) {
-      return false;
-    } else {
-      alert(JSON.stringify(this.registrationForm.value))
+
+
+
     }
-  }  
+
+  
+  onSubmit(customerData) {
+  console.log ( customerData.zonas);
+  console.warn('Your order has been submitted', customerData);
+    //this.router.navigate(['presentacion',customerData]);
+
+
+  }
+  
 
 }
