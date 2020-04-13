@@ -34,11 +34,30 @@ checkoutForm: any;
     {id:"17", comunidad:"Comunidad Valenciana "}
   ];
 
+ocupaciones: any[]=[
+    {id:"1", name:"Nefrólogo/a "},
+    {id:"2", name:"Enfermero/a "},
+    {id:"3", name:"Auxiliar de enfermería "},
+    {id:"4", name:"Personal de limpieza "},
+    {id:"5", name:"Mantenimiento "},
+    {id:"6", name:"Seguridad "}
+
+
+];
+
+
+
+
+
+
+
   constructor(
     private formBuilder: FormBuilder,
     private router:Router) { 
  this.checkoutForm = this.formBuilder.group({
-   zonas:''
+   zonas:'',
+   ocupacion:'',
+
 
   
 

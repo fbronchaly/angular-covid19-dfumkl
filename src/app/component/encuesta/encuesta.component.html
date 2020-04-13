@@ -8,22 +8,28 @@
 <div class="contenedor">
    
     
-<form class="form-inline justify-content-right"[formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+<form class=""[formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 
-<div class="contenedor" >
-   <div class="form-group">
- <label for="zonas">
-      Comunidad autónoma donde trabaja:
-    </label>
-  <select class="custom-select" formControlName="zonas">
-   <option value = {{zonas.id}}  *ngFor="let zonas of zona" >{{zonas.comunidad}}</option>
+
+<div class="form-group">
+<label for="zonas"> Comunidad autónoma donde trabaja: </label>
+<select  class="form-control" formControlName="zonas">
+<option value = {{zonas.id}}  *ngFor="let zonas of zona" >{{zonas.comunidad}}</option>
 </select>
 </div>
 
+ <div class="form-group">
+ <label for="ocupacion">  ¿ Cual es su ocupación? </label>
+  <select class="form-control" formControlName="ocupacion">
+  <option value = {{ocupacio.id}}  *ngFor="let ocupacio of ocupaciones" >{{ocupacio.name}}</option>
+</select>
+</div>
 <button class="button" type="submit">Enviar</button>
 
-</div>
+
 </form>
+
+
   </div>
   </div>
  
