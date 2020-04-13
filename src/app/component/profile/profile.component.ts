@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../auth.service';
 import { FormBuilder, Validators } from "@angular/forms";
 import {Router} from "@angular/router";
-import { AuthService } from '../../auth.service';
 
 
 
 @Component({
-  selector: 'app-encuesta',
-  templateUrl: './encuesta.component.html',
-  styleUrls: ['./encuesta.component.css']
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
 })
-export class EncuestaComponent  {
+export class ProfileComponent   {
+
 datos:any[]=[];
 cubierto: boolean;
 checkoutForm: any;
