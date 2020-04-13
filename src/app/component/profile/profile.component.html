@@ -1,28 +1,61 @@
-<div class="col-md-12">
-<body>
-   
-<div class="row">
-  <div class="col-md-4">
+<!-- Panel Title -->
+        
+  <div class="col-md-12">
+  <div class="alert alert-secondary text-center">
+    <strong>CUESTIONARIO</strong>
   </div>
-<div class="col-md-8">
-      <div class="container">
-         <div class="card text-left">
-               <div class="card-header bg-secondary text-white">
-    <h6 class="card-title text-white" >Primera pregunta</h6>
-               </div>
-          <div class="card-body">
-    
-    <p class="card-text text-md-left">La encuesta esta formada por preguntas tipo test, con un tiempo estimado de en su realización de x minutos.</p>
-    <p class="card-text text-md-left">
-</p>
 
-  
-       </div>
-  
-</div>
-</div>
+<div class="contenedor">
+   <div class="col-md-2">
+   </div>
+    <div class="col-md-8">
+<form class=""[formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+
+<div class="form-group">
+<label for="zonas"> Comunidad autónoma donde trabaja: </label>
+<select  class="form-control" formControlName="zonas" required>
+<option value = {{zonas.id}}  *ngFor="let zonas of zona" >{{zonas.comunidad}}</option>
+</select>
 </div>
 
+<div class="form-group">
+<label for="validationCustom01">  ¿ Cual es su ocupación? </label>
+<select id="validationCustom01" class="form-control" formControlName="ocupacion" required>
+<option value = {{ocupacio.id}}  *ngFor="let ocupacio of ocupaciones" >{{ocupacio.name}}</option>
+</select>
 </div>
-</body>
+
+<div class="form-group">
+<label for="gener"> Género </label>
+<select class="form-control" formControlName="gener" required>
+<option value = {{gener.id}}  *ngFor="let gener of genero" >{{gener.name}}</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="edad"> Edad </label>
+<select class="form-control" formControlName="edad" required>
+<option value = {{edad.id}}  *ngFor="let edad of edades" >{{edad.name}}</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="ecivil"> Estado civil </label>
+<select class="form-control" formControlName="ecivil" required>
+<option value = {{ecivil.id}}  *ngFor="let ecivil of ecivils" >{{ecivil.name}}</option>
+</select>
+</div>
+
+<button class="button" type="submit">Enviar</button>
+
+
+</form>
+
+    </div>
+<div class="col-md-2">
+   </div>
+
   </div>
+  </div>
+ 

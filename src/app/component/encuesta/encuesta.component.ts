@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from "@angular/forms";
 import {Router} from "@angular/router";
+import { AuthService } from '../../auth.service';
 
 
 
@@ -41,22 +42,42 @@ ocupaciones: any[]=[
     {id:"4", name:"Personal de limpieza "},
     {id:"5", name:"Mantenimiento "},
     {id:"6", name:"Seguridad "}
-
-
 ];
 
+genero: any[]=[
+    {id:"1", name:"Hombre "},
+    {id:"2", name:"Mujer"},
+    
+];
 
+edades: any[]=[
+    {id:"1", name:"18-25 "},
+    {id:"2", name:"26-30"},
+    {id:"3", name:"31-40 "},
+    {id:"4", name:"41-50 "},
+    {id:"5", name:">50 "}
+];
 
-
+ecivils: any[]=[
+    {id:"1", name:"Soltero/a "},
+    {id:"2", name:"Casado/a"},
+    {id:"3", name:"Viudo/a "},
+    {id:"4", name:"Divorciado/a "}
+    
+];
 
 
 
   constructor(
     private formBuilder: FormBuilder,
-    private router:Router) { 
+    private router:Router, 
+    public auth: AuthService) { 
  this.checkoutForm = this.formBuilder.group({
    zonas:'',
    ocupacion:'',
+   gener:'',
+   edad:'',
+   ecivil:''
 
 
   
