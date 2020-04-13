@@ -7,18 +7,32 @@
       <div class="container">
          <div class="card text-center">
                <div class="card-header bg-secondary text-white">
-    <h5 class="card-title text-white" >Consentimiento informado</h5>
+    <h5 class="card-title text-white" >Procedimiento informado</h5>
                </div>
           <div class="card-body">
-  
-    <p class="card-text text-md-left">Se seguirán las directrices nacionales (Código deontológico del colegio profesional) e internacionales a este respecto Declaración de Hèlsinki (Fortaleza, Brasil, Octubre 2013). las recomendaciones de la OMS y el código deontológico. 
-Todos los participantes en el estudio firmarán un consentimiento informado. Los sujetos firmarán un consentimiento informado antes de iniciarse el estudio previa información sobre los objetivos, desarrollo y alcance del estudio por el investigador principal ó colaboradores. De acuerdo con la Ley de Confidencialidad de Datos (Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales). 
-Los investigadores clínicos se comprometen a garantizar la confidencialidad de los datos mediante su anonimización y, en caso de que se incluyan pacientes de otros centros, utilizar un código para cada centro y paciente que solo conocerá el investigador principal de cada centro. El protocolo y su documentación anexa así como las hojas de recogida de datos y toda la información generada durante el estudio se consideran confidenciales. Sólo podrán ser utilizadas por los investigadores y para las finalidades específicas de este protocolo.
+    
+    <p class="card-text text-md-left"><b>Procedimiento del estudio</b></p>
+<p class="card-text text-md-left">Para este estudio se le pasará un cuestionario, que será anónimo y autoevaluado y lo podrá contestar a través de internet. El cuestionario consta de 73 preguntas que pretenden evaluar : 1) datos demográficos básicos, 2) riesgos de exposición directa e indirecta a COVID-19 3) evaluación de salud mental, 4) estado de salud autopercibido en comparación con el anterior al brote de COVID-19 brote.5)  acceso a ayuda psicologica y  6) factores  que han influido en el estado de ánimo.
 
-</p>
-   
-   
-    <a class="nav-link btn btn-primary" [routerLink]="['/investigadoras']">Salir</a>
+No hay respuestas erróneas. El tiempo estimado de respuesta es alrededor de 20 minutos. Usted podrá abandonar el proceso en cualquier momento.</p>
+
+<p class="card-text text-md-left"><b>Aspectos éticos</b></p>
+<p class="card-text text-md-left">El estudio ha sido aprobado por  el Comité de Ética de Investigación Clínica del Parc de Salut Mar. 
+Le garantizamos que en todo momento se respetarán la normas éticas dictadas por la última Declaración de Hèlsinki (Fortaleza, Brasil, Octubre 2013). y de Regulación del Tratamiento Automatizado de los Datos de Carácter Personal. Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.
+Si tiene dudas o quiere aclaraciones puede hablar con nosotros.
+Si acepta  su participación en el estudio , marque Si y pasará directamente al cuestionario.<p>
+
+<p class="card-text text-md-left"><b>Acepto la participación en el estudio y doy mi conformidad al mismo</b></p>
+<br>
+<div class= "row">
+   <div class="col-md-6">
+  <button class="nav-link btn btn-success btn-sm btn-block" (click)="auth.login()" >Si</button>
+   </div>
+   <div class="col-md-6">
+  <button class="nav-link btn btn-danger btn-sm btn-block" [routerLink]="['/investigadoras']" >No</button>
+  </div>
+  </div>
+
        </div>
   
 </div>
@@ -31,22 +45,12 @@ Los investigadores clínicos se comprometen a garantizar la confidencialidad de 
 
          <div class="card text-center">
              <div class="card-header bg-danger text-white" >
-    Autorización
+    Importante ¡¡¡
              </div>
            <div class="card-body">
     <h5 class="card-title ">Consentimiento informado</h5>
-    <p class="card-text">Por favor, antes de realizar la encuesta, autorice el consentimiento informado.</p>
-
-<label class="container"> 
-<input type="checkbox" [(ngModel)]="theCheckbox"  data-md-icheck (change)="toggleVisibility($event)"/>
-    Autorizo consentimiento 
-
-  <span class="checkmark"></span>
-</label>
-
-      <button class="nav-link btn btn-primary" (click)="auth.login()" *ngIf="theCheckbox">Encuesta</button>
-
-     
+    <p class="card-text">Por favor, antes de realizar la encuesta, registre el consentimiento informado.</p>
+ 
        </div>
       <div class="card-footer text-muted">
     Si decide no realizar el que consemiento informado, le agradecemos el tiempo que nos ha prestado. 
@@ -56,6 +60,6 @@ Los investigadores clínicos se comprometen a garantizar la confidencialidad de 
   
 </div>
 </div>
-   
+  
 </body>
 </div>
