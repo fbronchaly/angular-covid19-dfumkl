@@ -105,7 +105,12 @@ areasTrabajoCovid: any[]=[
    satisSueno:'',
    suenoInterfiere:'',
    demasCuenta:'',
-   preocupadoSueno:''
+   preocupadoSueno:'',
+   dejarPreocuparse:'',
+   preocupaExceso:'',
+   dificultadRelax:'',
+
+  
 
 
 
