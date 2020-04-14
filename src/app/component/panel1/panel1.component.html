@@ -40,7 +40,7 @@ Si acepta  su participación en el estudio , marque Si y pasará directamente al
 <br>
 <div class= "row">
   <button class="nav-link btn btn-success w-50" (click)="auth.login()" >Acepto</button>
-  <button class="nav-link btn btn-danger w-50" [routerLink]="['/investigadoras']">No Acepto</button>
+  <button class="nav-link btn btn-danger w-50" *ngIf="adios(" >No Acepto</button>
   </div>
 
 <br>     
