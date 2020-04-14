@@ -13,39 +13,881 @@
 
 
 <div class="form-group">
-<label for="zonas"> Comunidad autónoma donde trabaja: </label>
+<label for="zonas"><b> Comunidad autónoma donde trabaja: </b></label>
 <select  class="form-control" formControlName="zonas" required>
 <option value = {{zonas.id}}  *ngFor="let zonas of zona" >{{zonas.comunidad}}</option>
 </select>
 </div>
 
 <div class="form-group">
-<label for="validationCustom01">  ¿ Cual es su ocupación? </label>
+<label for="validationCustom01"> 1. ¿ Cual es su ocupación? </label>
 <select id="validationCustom01" class="form-control" formControlName="ocupacion" required>
 <option value = {{ocupacio.id}}  *ngFor="let ocupacio of ocupaciones" >{{ocupacio.name}}</option>
 </select>
 </div>
 
+
 <div class="form-group">
-<label for="gener"> Género </label>
-<select class="form-control" formControlName="gener" required>
-<option value = {{gener.id}}  *ngFor="let gener of genero" >{{gener.name}}</option>
-</select>
+<label for="atiendeCovid"> 2. Genero  </label>
+</div>
+<div class="form-group">
+<div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "gener" size="1" readonly=readonly required>
+  </div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio"  formControlName="gener"  id="inlineRadio1" value="1" required>
+  <label class="form-check-label" for="inlineRadio1">Hombre</label>
+</div>
+
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="gener"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Mujer</label>
+</div>
 </div>
 
 <div class="form-group">
-<label for="edad"> Edad </label>
+<label for="edad"> 3. Edad </label>
 <select class="form-control" formControlName="edad" required>
 <option value = {{edad.id}}  *ngFor="let edad of edades" >{{edad.name}}</option>
 </select>
 </div>
 
 <div class="form-group">
-<label for="ecivil"> Estado civil </label>
+<label for="ecivil">4.  Estado civil </label>
 <select class="form-control" formControlName="ecivil" required>
 <option value = {{ecivil.id}}  *ngFor="let ecivil of ecivils" >{{ecivil.name}}</option>
 </select>
 </div>
+
+<div class="form-group">
+<label for="dondeTrabaja"> 5. Lugar donde trabaja: </label>
+<select class="form-control" formControlName="dondeTrabaja" required>
+<option value = {{espe.id}}  *ngFor="let espe of dondeTrabaja" >{{espe.name}}</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="areasTrabajoCovid">6. Areas donde ha trabajado durante el periodo de pandemia: </label>
+<select class="form-control" formControlName="areasTrabajoCovid" required>
+<option value = {{area.id}}  *ngFor="let area of areasTrabajoCovid" >{{area.name}}</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 7. ¿Ha atendido pacientes diagnosticados de COVID-19?   </label>
+</div>
+
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "atiendeCovid" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="atiendeCovid"  id="inlineRadio1" value="1" required>
+  <label class="form-check-label" for="inlineRadio1">Si</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="atiendeCovid"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">No</label>
+</div>
+</div>
+<div class="form-group">
+<label for="atiendeCovid"> 8. ¿Tiene en su familia alguien que haya sido diagnosticado de COVID-19?    </label>
+</div>
+
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "familiarCovid" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="familiarCovid"  id="inlineRadio1" value="1" required>
+  <label class="form-check-label" for="inlineRadio1">Si</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="familiarCovid"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">No</label>
+</div>
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 9. ¿Alguno de sus amigos han sido diagnosticados de COVID 19?     </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "amigoCovid" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="amigoCovid"  id="inlineRadio1" value="1" required>
+  <label class="form-check-label" for="inlineRadio1">Si</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="amigoCovid"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">No</label>
+</div>
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 10. ¿Tiene algún vecino que haya sido diagnosticado de COVID 19?     </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "vecinoCovid" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="vecinoCovid"  id="inlineRadio1" value="1" required>
+  <label class="form-check-label" for="inlineRadio1">Si</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="vecinoCovid"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">No</label>
+</div>
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 11. ¿Tiene algún compañero de trabajo que haya sido diagnosticado de COVID 19?     </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "compaCovid" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="compaCovid"  id="inlineRadio1" value="1" required>
+  <label class="form-check-label" for="inlineRadio1">Si</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="compaCovid"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">No</label>
+</div>
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 12. ¿Ha convivido con alguien con sospecha de síntomas  de COVID 19?      </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "conviveCovid" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="conviveCovid"  id="inlineRadio1" value="1" required>
+  <label class="form-check-label" for="inlineRadio1">Si</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="conviveCovid"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">No</label>
+</div>
+</div>
+<div class="form-group">
+<label for="atiendeCovid"><b>Por favor indique la GRAVEDAD de su actual (p.ej., durante las últimas 2 semanas):     </b></label>
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid">13. Dificultad para quedarse dormido/a:      </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "difSueno" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="difSueno"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nada</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="difSueno"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Leve</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="difSueno"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Moderado</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="difSueno"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Grave</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="difSueno"  id="inlineRadio2" value="4" required>
+  <label class="form-check-label" for="inlineRadio2">Muy grave</label>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid">14. Dificultad para permanecer dormido/a      </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "difPerSueno" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="difPerSueno"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nada</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="difPerSueno"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Leve</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="difPerSueno"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Moderado</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="difPerSueno"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Grave</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="difPerSueno"  id="inlineRadio2" value="4" required>
+  <label class="form-check-label" for="inlineRadio2">Muy grave</label>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid">15. Despertarse muy temprano      </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "despTemprano" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nada</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Leve</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Moderado</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Grave</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio2" value="4" required>
+  <label class="form-check-label" for="inlineRadio2">Muy grave</label>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid">16.<b> ¿Como está de SATISFECHO/A en la actualidad con su sueño?  </b>  </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "satisSueno" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="satisSueno"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Muy satisfecho</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="satisSueno"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Satisfecho</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="satisSueno"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Neutral</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="satisSueno"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">No muy satisfecho</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio2" value="4" required>
+  <label class="form-check-label" for="inlineRadio2">Muy insatisfecho</label>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid">17.<b> ¿En qué medida considera que su problema de sueño INTERFIERE con su funcionamiento diario (por ejemplo, fatiga durante el día, capacidad para las tareas cotidianas/trabajo, concentración, memoria, estado de ánimo etc.)?</b>      </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "suenoInterfiere" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="suenoInterfiere"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nada</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Leve</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Moderado</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Grave</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere"  id="inlineRadio2" value="4" required>
+  <label class="form-check-label" for="inlineRadio2">Muy grave</label>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid">18.<b> ¿En qué medida cree que LOS DEMÁS SE DAN CUENTA de su problema de sueño por lo que afecta a su calidad de vida?</b>      </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "demasCuenta" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="demasCuenta"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nada</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="demasCuenta"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Leve</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="demasCuenta"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Moderado</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="demasCuenta"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Grave</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="demasCuenta"  id="inlineRadio2" value="4" required>
+  <label class="form-check-label" for="inlineRadio2">Muy grave</label>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid">19.<b> ¿Cuánto de PREOCUPADO/A está por su actual problema de sueño?</b>      </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "preocupadoSueno" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nada</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Leve</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Moderado</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Grave</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="4" required>
+  <label class="form-check-label" for="inlineRadio2">Muy grave</label>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"><b> Señale con qué frecuencia ha sufrido los siguientes problemas en los últimos 15 días:</b>      </label>
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 20. Se ha sentido nervioso, ansioso o muy alterado     </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "preocupadoSueno" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nunca</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 21. No ha podido dejar de preocuparse     </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "dejarPreocuparse" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nunca</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 22. Se ha preocupado excesivamente por diferentes cosas     </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "preocupaExceso" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="preocupaExceso"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nunca</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupaExceso"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupaExceso"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupaExceso"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 23. Ha tenido dificultad para relajarse     </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "dificultadRelax" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="dificultadRelax"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nunca</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dificultadRelax"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dificultadRelax"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dificultadRelax"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 24. Se ha sentido tan intranquilo que no podía estarse quieto     </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "intranquiloQuieto" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nunca</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 25. Se ha irritado o enfadado con facilidad      </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "irritadoFacil" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="irritadoFacil"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nunca</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="irritadoFacil"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="irritadoFacil"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="irritadoFacil"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 26. Ha sentido miedo, como si fuera a suceder algo terrible      </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "miedoTerrible" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="miedoTerrible"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nunca</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="miedoTerrible"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="miedoTerrible"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="miedoTerrible"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+
+<div class="form-group">
+<label for="atiendeCovid"> <b> Durante las últimas 2 semanas, ¿qué tan seguido ha
+tenido molestias debido a los siguientes problemas?
+  </b>   </label>
+</div>
+<div class="form-group">
+<label for="atiendeCovid"> 27. Poco interés o placer en hacer cosas       </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "pocoInteres" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="pocoInteres"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Ningún día</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="pocoInteres"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Varios días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="pocoInteres"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="pocoInteres"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 28. Se ha sentido decaído(a), deprimido(a) o sin esperanzas       </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "decaido" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="decaido"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Ningún día</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="decaido"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Varios días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="decaido"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="decaido"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 29. Ha tenido dificultad para quedarse o permanecer dormido(a), o ha dormido demasiado        </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "dificultadDormido" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="dificultadDormido"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Ningún día</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dificultadDormido"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Varios días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dificultadDormido"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dificultadDormido"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 30. Se ha sentido cansado(a) o con poca energía         </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "pocaEnergia" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="pocaEnergia"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Ningún día</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="pocaEnergia"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Varios días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="pocaEnergia"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="pocaEnergia"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 31. Sin apetito o ha comido en exceso          </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "apetito" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="apetito"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Ningún día</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="apetito"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Varios días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="apetito"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="apetito"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 32. Se ha sentido mal con usted mismo(a) – o que es un fracaso o que ha quedado mal con usted mismo(a) o con su familia          </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "fracaso" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="fracaso"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Ningún día</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="fracaso"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Varios días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="fracaso"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="fracaso"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 33. Ha tenido dificultad para concentrarse en ciertas actividades, tales como leer el periódico o ver la televisión 
+         </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "dificilConcentrar" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="dificilConcentrar"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Ningún día</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dificilConcentrar"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Varios días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dificilConcentrar"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="dificilConcentrar"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+
+<div class="form-group">
+<label for="atiendeCovid"> 34. ¿Se ha movido o hablado tan lento que otras personas podrían haberlo notado? o lo contrario – muy inquieto(a) o agitado(a) que ha estado moviéndose mucho más de lo normal
+         </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "movidoInquieto" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="movidoInquieto"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Ningún día</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="movidoInquieto"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Varios días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="movidoInquieto"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="movidoInquieto"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 35. Pensamientos de que estaría mejor muerto(a) o de lastimarse de alguna manera
+
+         </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "mejorMuerto" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="mejorMuerto"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Ningún día</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="mejorMuerto"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Varios días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="mejorMuerto"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="mejorMuerto"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 36. Si marcó cualquiera de los problemas, ¿qué dificultad le han dado estos problemas para hacer su trabajo, encargarse de las tareas del hogar, o llevarse bien con otras personas?
+
+
+         </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "qdificultad" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="qdificultad"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Ningún día</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="qdificultad"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Varios días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="qdificultad"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="qdificultad"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
+</div>
+
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"><b> En relación al episodio de pandemia por COVID 19      </b> </label>
+</div>
+<div class="form-group">
+<label for="atiendeCovid"> 37. Cualquier recuerdo me hacía volver a sentir lo que sentí antes.      </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "sentiAntes" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="sentiAntes"  id="inlineRadio1" value="1" required>
+  <label class="form-check-label" for="inlineRadio1">Si</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="sentiAntes"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">No</label>
+</div>
+</div>
+
+
 
 <button class="button" type="submit">Enviar</button>
 
@@ -53,8 +895,7 @@
 </form>
 
     </div>
-<div class="col-md-2">
-   </div>
+
 
   </div>
   </div>

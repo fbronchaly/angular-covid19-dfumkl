@@ -10,8 +10,6 @@ import { AuthService } from '../../auth.service';
 export class Panel1Component implements OnInit {
 
 
-
-
   constructor(public auth:AuthService) { }
 
   ngOnInit() {

@@ -34,12 +34,8 @@ checkoutForm: any;
   ];
 
 ocupaciones: any[]=[
-    {id:"1", name:"Nefrólogo/a "},
+    {id:"1", name:"Nefrologo/a "},
     {id:"2", name:"Enfermero/a "},
-    {id:"3", name:"Auxiliar de enfermería "},
-    {id:"4", name:"Personal de limpieza "},
-    {id:"5", name:"Mantenimiento "},
-    {id:"6", name:"Seguridad "}
 ];
 
 genero: any[]=[
@@ -66,21 +62,74 @@ ecivils: any[]=[
 
 
 
+areasTrabajoCovid: any[]=[
+    {id:"1", name:"Planta COVID"},
+    {id:"2", name:"Planta NO COVID "},
+    {id:"3", name:"Urgencias "},
+    {id:"4", name:"Cuidados intensivos "},
+    {id:"5", name:"Reanimación"},
+    {id:"6", name:"Hemodiálisis "},
+    {id:"7", name:"Teletrabajo "},
+    {id:"8", name:"Guardias "},
+    {id:"9", name:"Otras "},
+   
+];
+dondeTrabaja: any[]=[
+   {id:"1", name:"Trabaja en centro de diálisis"},
+   {id:"2", name:"Trabaja en hospital"}
+]
+
+
+
   constructor(
     private formBuilder: FormBuilder,
     private router:Router, 
     public auth: AuthService) { 
- this.checkoutForm = this.formBuilder.group({
+  this.checkoutForm = this.formBuilder.group({
    zonas:'',
    ocupacion:'',
    gener:'',
    edad:'',
-   ecivil:''
+   ecivil:'',
+   dondeTrabaja:'',
+   areasTrabajoCovid:'',
+   atiendeCovid:'',
+   familiarCovid:'',
+   amigoCovid:'',
+   vecinoCovid:'',
+   compaCovid:'',
+   conviveCovid:'',
+   difSueno:'',
+   difPerSueno:'',
+   despTemprano:'',
+   satisSueno:'',
+   suenoInterfiere:'',
+   demasCuenta:'',
+   preocupadoSueno:'',
+   dejarPreocuparse:'',
+   preocupaExceso:'',
+   dificultadRelax:'',
+   intranquiloQuieto:'',
+   irritadoFacil:'',
+   miedoTerrible:'',
+   pocoInteres:'',
+   decaido:'',
+   dificultadDormido:'',
+   pocaEnergia:'',
+   apetito:'',
+   fracaso:'',
+   dificilConcentrar:'',
+   movidoInquieto:'',
+   mejorMuerto:'',
+   qdificultad:'',
+   sentiAntes:'',
+   
 
 
-  
+
 
     });
+
 
 
 

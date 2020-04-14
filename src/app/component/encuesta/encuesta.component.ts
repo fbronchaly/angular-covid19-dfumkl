@@ -14,7 +14,7 @@ export class EncuestaComponent  {
 datos:any[]=[];
 cubierto: boolean;
 checkoutForm: any;
-checkoutForm2: any[]=[];
+
 
   
 

@@ -14,9 +14,7 @@ import { HelloComponent } from './hello.component';
 import { CabeceraComponent } from './component/cabecera/cabecera.component';
 import { BodyComponent } from './component/body/body.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { NavbarComponent } from './component/navbar/navbar.component';
 import { Panel1Component } from './component/panel1/panel1.component';
-import { Panel2Component } from './component/panel2/panel2.component';
 import { ConsentimientoComponent } from './component/consentimiento/consentimiento.component';
 import { EncuestaComponent } from './component/encuesta/encuesta.component';
 import { AuthService } from './auth.service';
@@ -30,7 +28,7 @@ import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.c
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,APP_ROUTING,RouterModule,HttpClientModule,ReactiveFormsModule,NgbModule ],
-  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, NavbarComponent, Panel1Component, Panel2Component, ConsentimientoComponent, EncuestaComponent, ProfileComponent, ProfileNefroComponent],
+  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, Panel1Component, ConsentimientoComponent, EncuestaComponent, ProfileComponent, ProfileNefroComponent],
   bootstrap:    [ AppComponent ],
   providers: [AuthService,AuthGuard]
 })
