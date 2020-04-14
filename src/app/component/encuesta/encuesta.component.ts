@@ -93,7 +93,12 @@ areasTrabajoCovid: any[]=[
    ecivil:'',
    especialidad:'',
    areasTrabajoCovid:'',
-   atiendeCovid:''
+   atiendeCovid:'',
+   familiarCovid:'',
+   amigoCovid:'',
+   vecinoCovid:'',
+   compaCovid:'',
+
 
     });
 
