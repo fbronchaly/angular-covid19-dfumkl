@@ -90,10 +90,10 @@ areasTrabajoCovid: any[]=[
    ocupacion:'',
    gener:'',
    edad:'',
-   ecivil:''
-
-
-  
+   ecivil:'',
+   especialidad:'',
+   areasTrabajoCovid:'',
+   atiendeCovid:''
 
     });
 
@@ -104,7 +104,7 @@ areasTrabajoCovid: any[]=[
 
   
   onSubmit(customerData) {
-  console.log ( customerData.zonas);
+  console.log ( customerData);
   console.warn('Your order has been submitted', customerData);
     //this.router.navigate(['presentacion',customerData]);
 
