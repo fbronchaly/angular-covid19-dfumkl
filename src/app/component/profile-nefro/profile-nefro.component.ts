@@ -145,21 +145,11 @@ dondeTrabaja: any[]=[
    sonabaCon:'',
    noHablar:'',
    apoyoPsico:'',
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+   materialPsico:'',
+   matPsico:'',
+   recurPsico:'',
+   interPsico:'',
+   terapia:'',
 
 
 
@@ -181,6 +171,34 @@ dondeTrabaja: any[]=[
   
   onSubmit(customerData) {
   console.log ( customerData.zonas);
+
+  if (customerData.matPsico === true){
+    customerData.matPsico = 1;
+  }else{
+    customerData.matPsico = 0;
+  }
+
+  if (customerData.recurPsico === true){
+    customerData.recurPsico = 1;
+  }else{
+    customerData.recurPsico = 0;
+  }
+
+  if (customerData.interPsico === true){
+    customerData.interPsico = 1;
+  }else{
+    customerData.interPsico = 0;
+  }
+   if (customerData.terapia === true){
+    customerData.terapia = 1;
+  }else{
+    customerData.terapia = 0;
+  }
+
+
+
+
+
   console.warn('Your order has been submitted', customerData);
     //this.router.navigate(['presentacion',customerData]);
 
