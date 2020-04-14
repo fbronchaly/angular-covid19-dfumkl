@@ -12,9 +12,8 @@ const APP_ROUTES: Routes = [
   { path: 'consentimiento', component:ConsentimientoComponent },
    { path: 'encuesta', component: EncuestaComponent },
    { path: 'paco', component:ProfileNefroComponent },
-    { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]
- },
-     
+    { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
+     { path: 'profile-nefro', component: ProfileNefroComponent, canActivate: [AuthGuard] },
      
      
    

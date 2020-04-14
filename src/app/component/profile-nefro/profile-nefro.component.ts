@@ -104,6 +104,7 @@ dondeTrabaja: any[]=[
    despTemprano:'',
    satisSueno:'',
    suenoInterfiere:'',
+   sentidoNervioso:'',
    demasCuenta:'',
    preocupadoSueno:'',
    dejarPreocuparse:'',
@@ -156,7 +157,14 @@ dondeTrabaja: any[]=[
    cambipProtocolo:'',
    preocupacion:'',
    contagiar:'',
-  
+   contagiarme:'',
+   excesoTrabajo:'',
+   acomodarse:'',
+   dificultadEpi:'',
+   aislamiento:'',
+   terapeutica:'',
+   brote:''
+
 
 
     });
