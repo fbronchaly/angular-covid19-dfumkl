@@ -14,6 +14,7 @@ export class EncuestaComponent  {
 datos:any[]=[];
 cubierto: boolean;
 checkoutForm: any;
+checkoutForm2: any[]=[];
 
   
 
@@ -112,15 +113,16 @@ areasTrabajoCovid: any[]=[
    intranquiloQuieto:'',
    irritadoFacil:'',
    miedoTerrible:'',
-
-
-
-
-  
-
-
-
-
+   pocoInteres:'',
+   decaido:'',
+   dificultadDormido:'',
+   pocaEnergia:'',
+   apetito:'',
+   fracaso:'',
+   dificilConcentrar:'',
+   movidoInquieto:'',
+   mejorMuerto:'',
+   qdificultad:'',
 
 
 
@@ -135,7 +137,7 @@ areasTrabajoCovid: any[]=[
   
   onSubmit(customerData) {
   console.log ( customerData);
-   console.log ( customerData.length);
+  console.log ( customerData.length);
   console.warn('Your order has been submitted', customerData);
     //this.router.navigate(['presentacion',customerData]);
 
