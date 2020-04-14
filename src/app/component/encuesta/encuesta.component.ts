@@ -109,6 +109,12 @@ areasTrabajoCovid: any[]=[
    dejarPreocuparse:'',
    preocupaExceso:'',
    dificultadRelax:'',
+   intranquiloQuieto:'',
+   irritadoFacil:'',
+   miedoTerrible:'',
+
+
+
 
   
 
@@ -129,6 +135,7 @@ areasTrabajoCovid: any[]=[
   
   onSubmit(customerData) {
   console.log ( customerData);
+   console.log ( customerData.length);
   console.warn('Your order has been submitted', customerData);
     //this.router.navigate(['presentacion',customerData]);
 
