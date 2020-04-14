@@ -98,6 +98,14 @@ areasTrabajoCovid: any[]=[
    amigoCovid:'',
    vecinoCovid:'',
    compaCovid:'',
+   conviveCovid:'',
+   difSueno:'',
+   difPerSueno:'',
+   despTemprano:'',
+   
+
+
+
 
 
     });
