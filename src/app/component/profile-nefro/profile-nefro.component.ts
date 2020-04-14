@@ -123,7 +123,49 @@ dondeTrabaja: any[]=[
    mejorMuerto:'',
    qdificultad:'',
    sentiAntes:'',
+   problemasDormido:'',
+   pensarSuceso:'',
+   enojado:'',
+   noAlterarme:'',
+   pensarEnEllo:'',
+   sentiaComo:'',
+   matenerLejos:'',
+   imagenSuceso:'',
+   sobresaltar:'',
+   noPensar:'',
+   darCuenta:'',
+   misSentimientos:'',
+   meEncontraba:'',
+   problemaConciliar:'',
+   meInvaden:'',
+   apartarlo:'',
+   problemaConcentracion:'',
+   cosasRecordaban:'',
+   sentiaVigilante:'',
+   sonabaCon:'',
+   noHablar:'',
+   apoyoPsico:'',
    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
 
 
 
