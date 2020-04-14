@@ -150,14 +150,13 @@ dondeTrabaja: any[]=[
    recurPsico:'',
    interPsico:'',
    terapia:'',
-
-
-
-
-
-
-
-
+   epiApropiado:'',
+   noPreparado:'',
+   faltaInfo:'',
+   cambipProtocolo:'',
+   preocupacion:'',
+   contagiar:'',
+  
 
 
     });
