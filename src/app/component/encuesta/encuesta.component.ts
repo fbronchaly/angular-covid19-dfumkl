@@ -69,8 +69,18 @@ especialidad: any[]=[
     {id:"15", name:"No procede "}
 ];
 
-
-
+areasTrabajoCovid: any[]=[
+    {id:"1", name:"Planta COVID"},
+    {id:"2", name:"Planta NO COVID "},
+    {id:"3", name:"Urgencias "},
+    {id:"4", name:"Cuidados intensivos "},
+    {id:"5", name:"Reanimación"},
+    {id:"6", name:"Hemodiálisis "},
+    {id:"7", name:"Teletrabajo "},
+    {id:"8", name:"Guardias "},
+    {id:"9", name:"Otras "},
+   
+];
 
   constructor(
     private formBuilder: FormBuilder,
