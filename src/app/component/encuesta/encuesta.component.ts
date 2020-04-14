@@ -104,7 +104,8 @@ areasTrabajoCovid: any[]=[
    despTemprano:'',
    satisSueno:'',
    suenoInterfiere:'',
-   demasCuenta:''
+   demasCuenta:'',
+   preocupadoSueno:''
 
 
 

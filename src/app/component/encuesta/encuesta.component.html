@@ -13,7 +13,7 @@
 
 
 <div class="form-group">
-<label for="validationCustom01">  ¿ Cual es su ocupación? </label>
+<label for="validationCustom01"> 1. ¿ Cual es su ocupación? </label>
 <select id="validationCustom01" class="form-control" formControlName="ocupacion" required>
 <option value = {{ocupacio.id}}  *ngFor="let ocupacio of ocupaciones" >{{ocupacio.name}}</option>
 </select>
@@ -21,7 +21,7 @@
 
 
 <div class="form-group">
-<label for="atiendeCovid"> Genero  </label>
+<label for="atiendeCovid"> 2. Genero  </label>
 </div>
 <div class="form-group">
 <div class="form-check form-check-inline">
@@ -40,35 +40,35 @@
 </div>
 
 <div class="form-group">
-<label for="edad"> Edad </label>
+<label for="edad"> 3. Edad </label>
 <select class="form-control" formControlName="edad" required>
 <option value = {{edad.id}}  *ngFor="let edad of edades" >{{edad.name}}</option>
 </select>
 </div>
 
 <div class="form-group">
-<label for="ecivil"> Estado civil </label>
+<label for="ecivil">4.  Estado civil </label>
 <select class="form-control" formControlName="ecivil" required>
 <option value = {{ecivil.id}}  *ngFor="let ecivil of ecivils" >{{ecivil.name}}</option>
 </select>
 </div>
 
 <div class="form-group">
-<label for="especialidad"> Especialidad </label>
+<label for="especialidad"> 5. Especialidad médica en la que trabaja: </label>
 <select class="form-control" formControlName="especialidad" required>
 <option value = {{espe.id}}  *ngFor="let espe of especialidad" >{{espe.name}}</option>
 </select>
 </div>
 
 <div class="form-group">
-<label for="areasTrabajoCovid"> Areas donde ha trabajado durante el periodo de pandemia: </label>
+<label for="areasTrabajoCovid">6. Areas donde ha trabajado durante el periodo de pandemia: </label>
 <select class="form-control" formControlName="areasTrabajoCovid" required>
 <option value = {{area.id}}  *ngFor="let area of areasTrabajoCovid" >{{area.name}}</option>
 </select>
 </div>
 
 <div class="form-group">
-<label for="atiendeCovid"> ¿Ha atendido pacientes diagnosticados de COVID-19?   </label>
+<label for="atiendeCovid"> 7. ¿Ha atendido pacientes diagnosticados de COVID-19?   </label>
 </div>
 
 <div class="form-group">
@@ -85,7 +85,7 @@
 </div>
 </div>
 <div class="form-group">
-<label for="atiendeCovid"> ¿Tiene en su familia alguien que haya sido diagnosticado de COVID-19?    </label>
+<label for="atiendeCovid"> 8. ¿Tiene en su familia alguien que haya sido diagnosticado de COVID-19?    </label>
 </div>
 
 <div class="form-group">
@@ -103,7 +103,7 @@
 </div>
 
 <div class="form-group">
-<label for="atiendeCovid"> ¿Alguno de sus amigos han sido diagnosticados de COVID 19?     </label>
+<label for="atiendeCovid"> 9. ¿Alguno de sus amigos han sido diagnosticados de COVID 19?     </label>
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
@@ -120,7 +120,7 @@
 </div>
 
 <div class="form-group">
-<label for="atiendeCovid"> ¿Tiene algún vecino que haya sido diagnosticado de COVID 19?     </label>
+<label for="atiendeCovid"> 10. ¿Tiene algún vecino que haya sido diagnosticado de COVID 19?     </label>
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
@@ -137,7 +137,7 @@
 </div>
 
 <div class="form-group">
-<label for="atiendeCovid">¿Tiene algún compañero de trabajo que haya sido diagnosticado de COVID 19?     </label>
+<label for="atiendeCovid"> 11. ¿Tiene algún compañero de trabajo que haya sido diagnosticado de COVID 19?     </label>
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
@@ -154,7 +154,7 @@
 </div>
 
 <div class="form-group">
-<label for="atiendeCovid">¿Ha convivido con alguien con sospecha de síntomas  de COVID 19?      </label>
+<label for="atiendeCovid"> 12. ¿Ha convivido con alguien con sospecha de síntomas  de COVID 19?      </label>
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
@@ -174,7 +174,7 @@
 </div>
 
 <div class="form-group">
-<label for="atiendeCovid">Dificultad para quedarse dormido/a:      </label>
+<label for="atiendeCovid">13. Dificultad para quedarse dormido/a:      </label>
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
@@ -204,7 +204,7 @@
 </div>
 
 <div class="form-group">
-<label for="atiendeCovid">Dificultad para permanecer dormido/a      </label>
+<label for="atiendeCovid">14. Dificultad para permanecer dormido/a      </label>
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
@@ -234,7 +234,7 @@
 </div>
 
 <div class="form-group">
-<label for="atiendeCovid">Despertarse muy temprano      </label>
+<label for="atiendeCovid">15. Despertarse muy temprano      </label>
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
@@ -294,7 +294,7 @@
 </div>
 
 <div class="form-group">
-<label for="atiendeCovid"><b> ¿En qué medida considera que su problema de sueño INTERFIERE con su funcionamiento diario (por ejemplo, fatiga durante el día, capacidad para las tareas cotidianas/trabajo, concentración, memoria, estado de ánimo etc.)?</b>      </label>
+<label for="atiendeCovid"><b> 17. ¿En qué medida considera que su problema de sueño INTERFIERE con su funcionamiento diario (por ejemplo, fatiga durante el día, capacidad para las tareas cotidianas/trabajo, concentración, memoria, estado de ánimo etc.)?</b>      </label>
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
@@ -324,7 +324,7 @@
 </div>
 
 <div class="form-group">
-<label for="atiendeCovid"><b> ¿En qué medida cree que LOS DEMÁS SE DAN CUENTA de su problema de sueño por lo que afecta a su calidad de vida?</b>      </label>
+<label for="atiendeCovid"><b> 18. ¿En qué medida cree que LOS DEMÁS SE DAN CUENTA de su problema de sueño por lo que afecta a su calidad de vida?</b>      </label>
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
@@ -348,6 +348,69 @@
 </div>
 <div class="form-check form-check-inline "  >
   <input class="form-check-input" type="radio"  formControlName="demasCuenta"  id="inlineRadio2" value="4" required>
+  <label class="form-check-label" for="inlineRadio2">Muy grave</label>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"><b> 19. ¿Cuánto de PREOCUPADO/A está por su actual problema de sueño?</b>      </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "preocupadoSueno" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nada</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Leve</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Moderado</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Grave</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="4" required>
+  <label class="form-check-label" for="inlineRadio2">Muy grave</label>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="atiendeCovid"><b> Señale con qué frecuencia ha sufrido los siguientes problemas en los últimos 15 días:</b>      </label>
+</div>
+<div class="form-group">
+<label for="atiendeCovid"> 20. Se ha sentido nervioso, ansioso o muy alterado     </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "preocupadoSueno" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio1" value="0" required>
+  <label class="form-check-label" for="inlineRadio1">Nada</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="1" required>
+  <label class="form-check-label" for="inlineRadio2">Leve</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="2" required>
+  <label class="form-check-label" for="inlineRadio2">Moderado</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="3" required>
+  <label class="form-check-label" for="inlineRadio2">Grave</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="4" required>
   <label class="form-check-label" for="inlineRadio2">Muy grave</label>
 </div>
 
