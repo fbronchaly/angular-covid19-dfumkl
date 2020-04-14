@@ -16,7 +16,7 @@
    
 
 <p class="card-text text-md-left"><b >Estudio</b></p>
-    <p class="card-text text-md-left">Nos dirigimos a usted para informarle sobre un estudio de investigación en el que se le invita a participar. El estudio ha sido aprobado por un Comité de Ética de la Investigación con medicamentos del Parc de Salut Mar (2020/XXXX). Nuestra intención es tan solo que usted reciba la información correcta y suficiente para que pueda decidir si acepta o no participar en este estudio. Para ello lea esta hoja informativa con atención y nosotros le aclararemos las dudas que le puedan surgir después de la explicación. Además, puede consultar con las personas que considere oportuno.</p>
+    <p class="card-text text-md-left">Nos dirigimos a usted para informarle sobre un estudio de investigación en el que se le invita a participar. El estudio ha sido aprobado por un Comité de Ética de la Investigación con medicamentos del Parc de Salut Mar (2020/9239). Nuestra intención es tan solo que usted reciba la información correcta y suficiente para que pueda decidir si acepta o no participar en este estudio. Para ello lea esta hoja informativa con atención y nosotros le aclararemos las dudas que le puedan surgir después de la explicación. Además, puede consultar con las personas que considere oportuno.</p>
     <br>
 <p class="card-text text-md-left"><b >Introducción</b></p>
 <p class="card-text text-md-left">La afectación psicológica de los trabajadores sanitarios expuestos a la pandemia por COVID-19 ha sido descrita en otros lugares del mundo. El enfrentamiento ante una enfermedad desconocida con alto grado de incertidumbre, con un elevado volumen de trabajo, con necesidad de realizar actividades diferentes y/o de manera diferente a la habitual y con aplicación de protocolos cambiantes todos los días en situaciones de emergencia ha supuesto un gran reto para los profesionales. 
@@ -25,6 +25,23 @@ Es importante conocer el efecto que esta situación puede generar en los profesi
 <br>
 <p class="card-text text-md-left"><b >Objetivo del estudio</b></p>
 <p class="card-text text-md-left">Este estudio se realiza para conocer el grado de afectación psicológica que ha supuesto la pandemia por COVID- 19 entre los profesionales sanitarios dedicados a la Nefrología  y conocer los factores biológicos, sociales y psicológicos (emocionales) que han influido en ello.</p>
+<p class="card-text text-md-left"><b>Procedimiento del estudio</b></p>
+<p class="card-text text-md-left">Para este estudio se le pasará un cuestionario, que será anónimo y autoevaluado y lo podrá contestar a través de internet. El cuestionario consta de 73 preguntas que pretenden evaluar : 1) datos demográficos básicos, 2) riesgos de exposición directa e indirecta a COVID-19 3) evaluación de salud mental, 4) estado de salud autopercibido en comparación con el anterior al brote de COVID-19 brote.5)  acceso a ayuda psicologica y  6) factores  que han influido en el estado de ánimo.
+
+No hay respuestas erróneas. El tiempo estimado de respuesta es alrededor de 20 minutos. Usted podrá abandonar el proceso en cualquier momento.</p>
+
+<p class="card-text text-md-left"><b>Aspectos éticos</b></p>
+<p class="card-text text-md-left">El estudio ha sido aprobado por  el Comité de Ética de Investigación Clínica del Parc de Salut Mar. 
+Le garantizamos que en todo momento se respetarán la normas éticas dictadas por la última Declaración de Hèlsinki (Fortaleza, Brasil, Octubre 2013). y de Regulación del Tratamiento Automatizado de los Datos de Carácter Personal. Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.
+Si tiene dudas o quiere aclaraciones puede hablar con nosotros.
+Si acepta  su participación en el estudio , marque Si y pasará directamente al cuestionario.<p>
+
+<p class="card-text text-md-left"><b>Acepto la participación en el estudio y doy mi conformidad al mismo</b></p>
+<br>
+<div class= "row">
+  <button class="nav-link btn btn-success w-50" (click)="auth.login()" >Acepto</button>
+  <button class="nav-link btn btn-danger w-50" [routerLink]="['/investigadoras']">No Acepto</button>
+  </div>
 
 <br>     
 <br> 
@@ -46,11 +63,11 @@ Es importante conocer el efecto que esta situación puede generar en los profesi
              </div>
            <div class="card-body">
     <h5 class="card-title ">Consentimiento informado</h5>
-    <p class="card-text">Por favor, antes de realizar la encuesta, registre el consentimiento informado.</p>
+    <p class="card-text">Por favor, antes de realizar la encuesta, acepte el consentimiento informado.</p>
     <a class="nav-link btn btn-primary" [routerLink]="['/consentimiento']">Ir al consentimiento</a>
        </div>
       <div class="card-footer text-muted">
-    Si decide no realizar el que consemiento informado, le agradecemos el tiempo que nos ha prestado. 
+    Si decide no aceptar el consentimiento informado, le agradecemos el tiempo que nos ha prestado. 
   </div>
 </div>
  </div>
