@@ -40,7 +40,8 @@ Si acepta  su participación en el estudio , marque Si y pasará directamente al
 <br>
 <div class= "row">
   <button class="nav-link btn btn-success w-50" (click)="auth.login()" >Acepto</button>
-  <button class="nav-link btn btn-danger w-50" *ngIf="adios(" >No Acepto</button>
+  <button class="nav-link btn btn-danger w-50" ngbPopover="Gracias! Hasta pronto"
+  popoverClass="my-custom-class">No Acepto</button>
   </div>
 
 <br>     

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'; 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 // Rutas
@@ -28,7 +29,7 @@ import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.c
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,APP_ROUTING,RouterModule,HttpClientModule,ReactiveFormsModule ],
+  imports:      [ BrowserModule, FormsModule,APP_ROUTING,RouterModule,HttpClientModule,ReactiveFormsModule,NgbModule ],
   declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, NavbarComponent, Panel1Component, Panel2Component, ConsentimientoComponent, EncuestaComponent, ProfileComponent, ProfileNefroComponent],
   bootstrap:    [ AppComponent ],
   providers: [AuthService,AuthGuard]
