@@ -13,13 +13,6 @@
 
 
 <div class="form-group">
-<label for="zonas"> Comunidad autónoma donde trabaja: </label>
-<select  class="form-control" formControlName="zonas" required>
-<option value = {{zonas.id}}  *ngFor="let zonas of zona" >{{zonas.comunidad}}</option>
-</select>
-</div>
-
-<div class="form-group">
 <label for="validationCustom01">  ¿ Cual es su ocupación? </label>
 <select id="validationCustom01" class="form-control" formControlName="ocupacion" required>
 <option value = {{ocupacio.id}}  *ngFor="let ocupacio of ocupaciones" >{{ocupacio.name}}</option>
@@ -46,6 +39,15 @@
 <option value = {{ecivil.id}}  *ngFor="let ecivil of ecivils" >{{ecivil.name}}</option>
 </select>
 </div>
+
+<div class="form-group">
+<label for="especialidad"> Especialidad </label>
+<select class="form-control" formControlName="especialidad" required>
+<option value = {{espe.id}}  *ngFor="let espe of especialidad" >{{espe.name}}</option>
+</select>
+</div>
+
+
 
 <button class="button" type="submit">Enviar</button>
 

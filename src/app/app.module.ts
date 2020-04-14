@@ -21,6 +21,7 @@ import { EncuestaComponent } from './component/encuesta/encuesta.component';
 import { AuthService } from './auth.service';
 import {AuthGuard } from './auth.guard';
 import { ProfileComponent } from './component/profile/profile.component';
+import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.component';
 
 
 
@@ -28,7 +29,7 @@ import { ProfileComponent } from './component/profile/profile.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,APP_ROUTING,RouterModule,HttpClientModule,ReactiveFormsModule ],
-  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, NavbarComponent, Panel1Component, Panel2Component, ConsentimientoComponent, EncuestaComponent, ProfileComponent],
+  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, NavbarComponent, Panel1Component, Panel2Component, ConsentimientoComponent, EncuestaComponent, ProfileComponent, ProfileNefroComponent],
   bootstrap:    [ AppComponent ],
   providers: [AuthService,AuthGuard]
 })

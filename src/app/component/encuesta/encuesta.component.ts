@@ -15,33 +15,18 @@ datos:any[]=[];
 cubierto: boolean;
 checkoutForm: any;
 
-  zona: any[]=[
-    {id:"1", comunidad:"Andalucía "},
-    {id:"2", comunidad:"Aragón "},
-    {id:"3", comunidad:"Asturias "},
-    {id:"4", comunidad:"Baleares "},
-    {id:"5", comunidad:"Canarias "},
-    {id:"6", comunidad:"Cantabria "},
-    {id:"7", comunidad:"Castilla-La Mancha "},
-    {id:"8", comunidad:"Castilla y León "},
-    {id:"9", comunidad:"Cataluña "},
-    {id:"10", comunidad:"Extramadura "},
-    {id:"11", comunidad:"Galicia "},
-    {id:"12", comunidad:"La Rioja "},
-    {id:"13", comunidad:"Madrid "},
-    {id:"14", comunidad:"Murcia "},
-    {id:"15", comunidad:"Navarra "},
-    {id:"16", comunidad:"Pais Vasco "},
-    {id:"17", comunidad:"Comunidad Valenciana "}
-  ];
+  
 
 ocupaciones: any[]=[
-    {id:"1", name:"Nefrólogo/a "},
-    {id:"2", name:"Enfermero/a "},
-    {id:"3", name:"Auxiliar de enfermería "},
-    {id:"4", name:"Personal de limpieza "},
-    {id:"5", name:"Mantenimiento "},
-    {id:"6", name:"Seguridad "}
+    {id:"1", name:"Adjunto/a "},
+    {id:"2", name:"Residente "},
+    {id:"3", name:"Estudiante "},
+    {id:"4", name:"Emfermero/a "},
+    {id:"5", name:"Auxiliar de enfermería "},
+    {id:"6", name:"Camillero "},
+    {id:"7", name:"Personal administrativo "},
+    {id:"8", name:"Personal de mantenimiento "},
+    {id:"9", name:"Personal directivo "},
 ];
 
 genero: any[]=[
@@ -66,6 +51,25 @@ ecivils: any[]=[
     
 ];
 
+especialidad: any[]=[
+    {id:"1", name:"Neumología"},
+    {id:"2", name:"Infecciosas "},
+    {id:"3", name:"Medicina interna "},
+    {id:"4", name:"Cuidados intensivos "},
+    {id:"5", name:"Urgencias"},
+    {id:"6", name:"Nefrología "},
+    {id:"7", name:"Cardiología "},
+    {id:"8", name:"Reumatología "},
+    {id:"9", name:"Digestivo "},
+    {id:"10", name:"Endocrinología "},
+    {id:"11", name:"Oncología "},
+    {id:"12", name:"Hematología "},
+    {id:"13", name:"Especialidad médico-quirúrgica "},
+    {id:"14", name:"Especialidad quirúrgica "},
+    {id:"15", name:"No procede "}
+];
+
+
 
 
   constructor(
@@ -73,7 +77,6 @@ ecivils: any[]=[
     private router:Router, 
     public auth: AuthService) { 
  this.checkoutForm = this.formBuilder.group({
-   zonas:'',
    ocupacion:'',
    gener:'',
    edad:'',
