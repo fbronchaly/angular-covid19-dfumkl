@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from "@angular/forms";
 import {Router} from "@angular/router";
 import { AuthService } from '../../auth.service';
 import { HttpClient } from '@angular/common/http';
+import {PruevaModel} from '../.model/prueba.model';
 @Component({
   selector: 'app-profile-nefro',
   templateUrl: './profile-nefro.component.html',
@@ -13,7 +14,7 @@ export class ProfileNefroComponent  {
   datos:any[]=[];
 cubierto: boolean;
 checkoutForm: any;
-private url = 'https://encuestacovid19emocional.firebaseio.com/';
+private url = 'https://encuestacovid19emocional.firebaseio.com';
 
   zonas: any[]=[
     {id:"1", comunidad:"Andalucía "},
@@ -204,13 +205,13 @@ dondeTrabaja: any[]=[
     customerData.terapia = 0;
   }
 
-
+  
 
 
 
   console.warn('Your order has been submitted', customerData);
     //this.router.navigate(['presentacion',customerData]);
-    return this.http.post(`${this.url}`,customerData)
+    return this.http.put(`${this.url}/DatosEncuesta.json`,customerData);
     
 
 
