@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, Validators } from "@angular/forms";
 import {Router} from "@angular/router";
 import { AuthService } from '../../auth.service';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-profile-nefro',
   templateUrl: './profile-nefro.component.html',
@@ -12,6 +13,7 @@ export class ProfileNefroComponent  {
   datos:any[]=[];
 cubierto: boolean;
 checkoutForm: any;
+private url = 'https://encuestacovid19emocional.firebaseio.com/';
 
   zonas: any[]=[
     {id:"1", comunidad:"Andalucía "},
@@ -84,7 +86,8 @@ dondeTrabaja: any[]=[
   constructor(
     private formBuilder: FormBuilder,
     private router:Router, 
-    public auth: AuthService) { 
+    public auth: AuthService,
+    private http: HttpClient) { 
   this.checkoutForm = this.formBuilder.group({
    zonas0:'',
    ocupacion1:'',
@@ -207,6 +210,8 @@ dondeTrabaja: any[]=[
 
   console.warn('Your order has been submitted', customerData);
     //this.router.navigate(['presentacion',customerData]);
+    return this.http.post(`${this.url}`,customerData)
+    
 
 
   }

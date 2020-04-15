@@ -20,6 +20,7 @@ import { AuthService } from './auth.service';
 import {AuthGuard } from './auth.guard';
 import { ProfileComponent } from './component/profile/profile.component';
 import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.component';
+import { FirebaseService } from './firebase.service';
 
 
 
@@ -29,6 +30,6 @@ import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.c
   imports:      [ BrowserModule, FormsModule,APP_ROUTING,RouterModule,HttpClientModule,ReactiveFormsModule,NgbModule ],
   declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, Panel1Component, EncuestaComponent, ProfileComponent, ProfileNefroComponent],
   bootstrap:    [ AppComponent ],
-  providers: [AuthService,AuthGuard]
+  providers: [AuthService,AuthGuard, FirebaseService]
 })
 export class AppModule { }
