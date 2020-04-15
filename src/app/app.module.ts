@@ -23,6 +23,7 @@ import {AuthGuard } from './auth.guard';
 import { ProfileComponent } from './component/profile/profile.component';
 import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.component';
 import { FirebaseService } from './firebase.service';
+import { PaginaFinalComponent } from './component/pagina-final/pagina-final.component';
 
 
 
@@ -30,7 +31,7 @@ import { FirebaseService } from './firebase.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,APP_ROUTING,RouterModule,HttpClientModule,ReactiveFormsModule,NgbModule,CookieLawModule,BrowserAnimationsModule ],
-  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, Panel1Component, EncuestaComponent, ProfileComponent, ProfileNefroComponent],
+  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, Panel1Component, EncuestaComponent, ProfileComponent, ProfileNefroComponent, PaginaFinalComponent],
   bootstrap:    [ AppComponent ],
   providers: [AuthService,AuthGuard, FirebaseService]
 })
