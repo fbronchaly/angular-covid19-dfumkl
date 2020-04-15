@@ -222,8 +222,7 @@ dondeTrabaja: any[]=[
     //return this.http.put(`${this.url}/DatosEncuesta.json`,customerData);
     
     
-    let peticion: Observable<any>;
-    peticion = this.firebaseService.crearHeroe( this.prueba );
+   this.router.navigate(['/pagina-final']);
     
 
 
