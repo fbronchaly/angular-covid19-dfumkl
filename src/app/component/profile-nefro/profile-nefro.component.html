@@ -14,14 +14,14 @@
 
 <div class="form-group">
 <label for="zonas"><b> Comunidad autónoma donde trabaja: </b></label>
-<select  class="form-control" formControlName="zonas" required>
+<select  class="form-control" formControlName="zonas0" required>
 <option value = {{zonas.id}}  *ngFor="let zonas of zona" >{{zonas.comunidad}}</option>
 </select>
 </div>
 
 <div class="form-group">
 <label for="validationCustom01"> 1. ¿ Cual es su ocupación? </label>
-<select id="validationCustom01" class="form-control" formControlName="ocupacion" required>
+<select id="validationCustom01" class="form-control" formControlName="ocupacion1" required>
 <option value = {{ocupacio.id}}  *ngFor="let ocupacio of ocupaciones" >{{ocupacio.name}}</option>
 </select>
 </div>
@@ -32,44 +32,44 @@
 </div>
 <div class="form-group">
 <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "gener" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "gener2" size="1" readonly=readonly required>
   </div>
 
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio"  formControlName="gener"  id="inlineRadio1" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="gener2"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Hombre</label>
 </div>
 
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="gener"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="gener2"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Mujer</label>
 </div>
 </div>
 
 <div class="form-group">
 <label for="edad"> 3. Edad </label>
-<select class="form-control" formControlName="edad" required>
+<select class="form-control" formControlName="edad3" required>
 <option value = {{edad.id}}  *ngFor="let edad of edades" >{{edad.name}}</option>
 </select>
 </div>
 
 <div class="form-group">
 <label for="ecivil">4.  Estado civil </label>
-<select class="form-control" formControlName="ecivil" required>
+<select class="form-control" formControlName="ecivil4" required>
 <option value = {{ecivil.id}}  *ngFor="let ecivil of ecivils" >{{ecivil.name}}</option>
 </select>
 </div>
 
 <div class="form-group">
 <label for="dondeTrabaja"> 5. Lugar donde trabaja: </label>
-<select class="form-control" formControlName="dondeTrabaja" required>
+<select class="form-control" formControlName="dondeTrabaja5" required>
 <option value = {{espe.id}}  *ngFor="let espe of dondeTrabaja" >{{espe.name}}</option>
 </select>
 </div>
 
 <div class="form-group">
 <label for="areasTrabajoCovid">6. Areas donde ha trabajado durante el periodo de pandemia: </label>
-<select class="form-control" formControlName="areasTrabajoCovid" required>
+<select class="form-control" formControlName="areasTrabajoCovid6" required>
 <option value = {{area.id}}  *ngFor="let area of areasTrabajoCovid" >{{area.name}}</option>
 </select>
 </div>
@@ -80,14 +80,14 @@
 
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "atiendeCovid" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "atiendeCovid7" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="atiendeCovid"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="atiendeCovid7"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="atiendeCovid"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="atiendeCovid7"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -97,14 +97,14 @@
 
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "familiarCovid" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "familiarCovid8" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="familiarCovid"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="familiarCovid8"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="familiarCovid"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="familiarCovid8"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -114,14 +114,14 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "amigoCovid" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "amigoCovid9" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="amigoCovid"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="amigoCovid9"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="amigoCovid"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="amigoCovid9"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -131,14 +131,14 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "vecinoCovid" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "vecinoCovid10" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="vecinoCovid"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="vecinoCovid10"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="vecinoCovid"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="vecinoCovid10"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -148,14 +148,14 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "compaCovid" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "compaCovid11" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="compaCovid"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="compaCovid11"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="compaCovid"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="compaCovid11"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -165,14 +165,14 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "conviveCovid" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "conviveCovid12" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="conviveCovid"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="conviveCovid12"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="conviveCovid"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="conviveCovid12"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -185,26 +185,26 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "difSueno" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "difSueno13" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="difSueno"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="difSueno13"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nada</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="difSueno"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="difSueno13"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Leve</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="difSueno"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="difSueno13"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Moderado</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="difSueno"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="difSueno13"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Grave</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="difSueno"  id="inlineRadio2" value="4" required>
+  <input class="form-check-input" type="radio"  formControlName="difSueno13"  id="inlineRadio2" value="4" required>
   <label class="form-check-label" for="inlineRadio2">Muy grave</label>
 </div>
 
@@ -215,26 +215,26 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "difPerSueno" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "difPerSueno14" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="difPerSueno"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="difPerSueno14"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nada</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="difPerSueno"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="difPerSueno14"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Leve</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="difPerSueno"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="difPerSueno14"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Moderado</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="difPerSueno"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="difPerSueno14"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Grave</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="difPerSueno"  id="inlineRadio2" value="4" required>
+  <input class="form-check-input" type="radio"  formControlName="difPerSueno14"  id="inlineRadio2" value="4" required>
   <label class="form-check-label" for="inlineRadio2">Muy grave</label>
 </div>
 
@@ -245,26 +245,26 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "despTemprano" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "despTemprano15" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="despTemprano15"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nada</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="despTemprano15"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Leve</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="despTemprano15"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Moderado</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="despTemprano15"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Grave</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio2" value="4" required>
+  <input class="form-check-input" type="radio"  formControlName="despTemprano15"  id="inlineRadio2" value="4" required>
   <label class="form-check-label" for="inlineRadio2">Muy grave</label>
 </div>
 
@@ -275,26 +275,26 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "satisSueno" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "satisSueno16" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="satisSueno"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="satisSueno16"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Muy satisfecho</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="satisSueno"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="satisSueno16"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Satisfecho</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="satisSueno"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="satisSueno16"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Neutral</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="satisSueno"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="satisSueno16"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">No muy satisfecho</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="despTemprano"  id="inlineRadio2" value="4" required>
+  <input class="form-check-input" type="radio"  formControlName="satisSueno16"  id="inlineRadio2" value="4" required>
   <label class="form-check-label" for="inlineRadio2">Muy insatisfecho</label>
 </div>
 
@@ -305,26 +305,26 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "suenoInterfiere" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "suenoInterfiere17" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="suenoInterfiere"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="suenoInterfiere17"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nada</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere17"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Leve</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere17"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Moderado</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere17"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Grave</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere"  id="inlineRadio2" value="4" required>
+  <input class="form-check-input" type="radio"  formControlName="suenoInterfiere17"  id="inlineRadio2" value="4" required>
   <label class="form-check-label" for="inlineRadio2">Muy grave</label>
 </div>
 
@@ -335,26 +335,26 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "demasCuenta" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "demasCuenta18" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="demasCuenta"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="demasCuenta18"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nada</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="demasCuenta"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="demasCuenta18"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Leve</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="demasCuenta"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="demasCuenta18"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Moderado</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="demasCuenta"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="demasCuenta18"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Grave</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="demasCuenta"  id="inlineRadio2" value="4" required>
+  <input class="form-check-input" type="radio"  formControlName="demasCuenta18"  id="inlineRadio2" value="4" required>
   <label class="form-check-label" for="inlineRadio2">Muy grave</label>
 </div>
 
@@ -365,26 +365,26 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "preocupadoSueno" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "preocupadoSueno19" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="preocupadoSueno19"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nada</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno19"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Leve</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno19"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Moderado</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno19"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Grave</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno"  id="inlineRadio2" value="4" required>
+  <input class="form-check-input" type="radio"  formControlName="preocupadoSueno19"  id="inlineRadio2" value="4" required>
   <label class="form-check-label" for="inlineRadio2">Muy grave</label>
 </div>
 
@@ -399,22 +399,22 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "sentidoNervioso" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "sentidoNervioso20" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="sentidoNervioso"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="sentidoNervioso20"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nunca</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="sentidoNervioso"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="sentidoNervioso20"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="sentidoNervioso"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="sentidoNervioso20"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="sentidoNervioso"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="sentidoNervioso20"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -426,22 +426,22 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "dejarPreocuparse" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "dejarPreocuparse21" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse21"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nunca</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse21"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse21"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="dejarPreocuparse21"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -453,22 +453,22 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "preocupaExceso" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "preocupaExceso22" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="preocupaExceso"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="preocupaExceso22"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nunca</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="preocupaExceso"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="preocupaExceso22"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="preocupaExceso"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="preocupaExceso22"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="preocupaExceso"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="preocupaExceso22"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -480,22 +480,22 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "dificultadRelax" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "dificultadRelax23" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="dificultadRelax"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="dificultadRelax23"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nunca</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dificultadRelax"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="dificultadRelax23"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dificultadRelax"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="dificultadRelax23"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dificultadRelax"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="dificultadRelax23"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -507,22 +507,22 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "intranquiloQuieto" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "intranquiloQuieto24" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto24"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nunca</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto24"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto24"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="intranquiloQuieto24"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -534,22 +534,22 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "irritadoFacil" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "irritadoFacil25" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="irritadoFacil"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="irritadoFacil25"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nunca</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="irritadoFacil"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="irritadoFacil25"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="irritadoFacil"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="irritadoFacil25"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="irritadoFacil"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="irritadoFacil25"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -561,22 +561,22 @@
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "miedoTerrible" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "miedoTerrible26" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="miedoTerrible"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="miedoTerrible26"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Nunca</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="miedoTerrible"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="miedoTerrible26"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Menos de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="miedoTerrible"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="miedoTerrible26"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="miedoTerrible"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="miedoTerrible26"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -594,22 +594,22 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "pocoInteres" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "pocoInteres27" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="pocoInteres"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="pocoInteres27"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Ningún día</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="pocoInteres"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="pocoInteres27"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Varios días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="pocoInteres"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="pocoInteres27"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="pocoInteres"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="pocoInteres27"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -621,22 +621,22 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "decaido" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "decaido28" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="decaido"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="decaido28"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Ningún día</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="decaido"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="decaido28"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Varios días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="decaido"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="decaido28"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="decaido"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="decaido28"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -648,22 +648,22 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "dificultadDormido" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "dificultadDormido29" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="dificultadDormido"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="dificultadDormido29"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Ningún día</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dificultadDormido"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="dificultadDormido29"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Varios días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dificultadDormido"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="dificultadDormido29"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dificultadDormido"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="dificultadDormido29"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -675,22 +675,22 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "pocaEnergia" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "pocaEnergia30" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="pocaEnergia"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="pocaEnergia30"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Ningún día</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="pocaEnergia"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="pocaEnergia30"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Varios días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="pocaEnergia"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="pocaEnergia30"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="pocaEnergia"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="pocaEnergia30"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -705,19 +705,19 @@ tenido molestias debido a los siguientes problemas?
   <input class="form-control pex1" formControlName= "apetito" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="apetito"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="apetito31"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Ningún día</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="apetito"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="apetito31"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Varios días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="apetito"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="apetito31"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="apetito"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="apetito31"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -729,22 +729,22 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "fracaso" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "fracaso32" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="fracaso"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="fracaso32"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Ningún día</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="fracaso"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="fracaso32"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Varios días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="fracaso"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="fracaso32"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="fracaso"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="fracaso32"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -757,22 +757,22 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "dificilConcentrar" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "dificilConcentrar33" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="dificilConcentrar"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="dificilConcentrar33"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Ningún día</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dificilConcentrar"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="dificilConcentrar33"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Varios días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dificilConcentrar"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="dificilConcentrar33"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="dificilConcentrar"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="dificilConcentrar33"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -786,22 +786,22 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "movidoInquieto" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "movidoInquieto34" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="movidoInquieto"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="movidoInquieto34"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Ningún día</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="movidoInquieto"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="movidoInquieto34"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Varios días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="movidoInquieto"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="movidoInquieto34"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="movidoInquieto"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="movidoInquieto34"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -815,22 +815,22 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "mejorMuerto" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "mejorMuerto35" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="mejorMuerto"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="mejorMuerto35"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Ningún día</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="mejorMuerto"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="mejorMuerto35"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Varios días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="mejorMuerto"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="mejorMuerto35"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="mejorMuerto"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="mejorMuerto35"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -845,22 +845,22 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "qdificultad" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "qdificultad36" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="qdificultad"  id="inlineRadio1" value="0" required>
+ <input class="form-check-input" type="radio"  formControlName="qdificultad36"  id="inlineRadio1" value="0" required>
   <label class="form-check-label" for="inlineRadio1">Ningún día</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="qdificultad"  id="inlineRadio2" value="1" required>
+  <input class="form-check-input" type="radio"  formControlName="qdificultad36"  id="inlineRadio2" value="1" required>
   <label class="form-check-label" for="inlineRadio2">Varios días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="qdificultad"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="qdificultad36"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">Más de la mitad de los días</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="qdificultad"  id="inlineRadio2" value="3" required>
+  <input class="form-check-input" type="radio"  formControlName="qdificultad36"  id="inlineRadio2" value="3" required>
   <label class="form-check-label" for="inlineRadio2">Casi todos los días</label>
 </div>
 
@@ -875,14 +875,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "sentiAntes" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "sentiAntes37" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="sentiAntes"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="sentiAntes37"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="sentiAntes"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="sentiAntes37"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -892,14 +892,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "problemasDormido" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "problemasDormido38" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="problemasDormido"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="problemasDormido38"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="problemasDormido"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="problemasDormido38"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -909,14 +909,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "pensarSuceso" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "pensarSuceso39" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="pensarSuceso"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="pensarSuceso39"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="pensarSuceso"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="pensarSuceso39"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -926,14 +926,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "enojado" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "enojado40" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="enojado"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="enojado40"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="enojado"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="enojado40"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -943,14 +943,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "noAlterarme" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "noAlterarme41" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="noAlterarme"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="noAlterarme41"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="noAlterarme"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="noAlterarme41"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -960,14 +960,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "pensarEnEllo" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "pensarEnEllo42" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="pensarEnEllo"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="pensarEnEllo42"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="pensarEnEllo"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="pensarEnEllo42"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -977,14 +977,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "sentiaComo" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "sentiaComo43" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="sentiaComo"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="sentiaComo43"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="sentiaComo"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="sentiaComo43"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -994,14 +994,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "matenerLejos" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "matenerLejos44" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="matenerLejos"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="matenerLejos44"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="matenerLejos"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="matenerLejos44"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1011,14 +1011,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "imagenSuceso" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "imagenSuceso45" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="imagenSuceso"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="imagenSuceso45"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="imagenSuceso"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="imagenSuceso45"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1028,14 +1028,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "sobresaltar" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "sobresaltar46" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="sobresaltar"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="sobresaltar46"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="sobresaltar"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="sobresaltar46"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1045,14 +1045,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "noPensar" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "noPensar47" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="noPensar"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="noPensar47"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="noPensar"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="noPensar47"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1062,14 +1062,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "darCuenta" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "darCuenta48" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="darCuenta"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="darCuenta48"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="darCuenta"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="darCuenta48"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1079,14 +1079,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "misSentimientos" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "misSentimientos49" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="misSentimientos"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="misSentimientos49"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="misSentimientos"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="misSentimientos49"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1096,14 +1096,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "meEncontraba" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "meEncontraba50" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="meEncontraba"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="meEncontraba50"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="meEncontraba"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="meEncontraba50"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1113,14 +1113,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "problemaConciliar" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "problemaConciliar51" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="problemaConciliar"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="problemaConciliar51"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="problemaConciliar"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="problemaConciliar51"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1130,14 +1130,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "meInvaden" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "meInvaden52" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="meInvaden"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="meInvaden52"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="meInvaden"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="meInvaden52"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1147,14 +1147,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "apartarlo" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "apartarlo53" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="apartarlo"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="apartarlo53"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="apartarlo"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="apartarlo53"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1164,14 +1164,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "problemaConcentracion" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "problemaConcentracion54" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="problemaConcentracion"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="problemaConcentracion54"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="problemaConcentracion"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="problemaConcentracion54"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1181,14 +1181,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "cosasRecordaban" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "cosasRecordaban55" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="cosasRecordaban"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="cosasRecordaban55"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="cosasRecordaban"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="cosasRecordaban55"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1198,14 +1198,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "sentiaVigilante" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "sentiaVigilante56" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="sentiaVigilante"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="sentiaVigilante56"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="sentiaVigilante"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="sentiaVigilante56"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1215,14 +1215,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "sonabaCon" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "sonabaCon57" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="sonabaCon"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="sonabaCon57"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="sonabaCon"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="sonabaCon57"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1232,14 +1232,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "noHablar" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "noHablar58" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="noHablar"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="noHablar58"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="noHablar"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="noHablar58"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
@@ -1249,14 +1249,14 @@ tenido molestias debido a los siguientes problemas?
 </div>
 <div class="form-group">
   <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "apoyoPsico" size="1" readonly=readonly required>
+  <input class="form-control pex1" formControlName= "apoyoPsico59" size="1" readonly=readonly required>
     </div>
 <div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="apoyoPsico"  id="inlineRadio1" value="1" required>
+ <input class="form-check-input" type="radio"  formControlName="apoyoPsico59"  id="inlineRadio1" value="1" required>
   <label class="form-check-label" for="inlineRadio1">Si</label>
 </div>
 <div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="apoyoPsico"  id="inlineRadio2" value="2" required>
+  <input class="form-check-input" type="radio"  formControlName="apoyoPsico59"  id="inlineRadio2" value="2" required>
   <label class="form-check-label" for="inlineRadio2">No</label>
 </div>
 </div>
