@@ -15,7 +15,6 @@ import { CabeceraComponent } from './component/cabecera/cabecera.component';
 import { BodyComponent } from './component/body/body.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { Panel1Component } from './component/panel1/panel1.component';
-import { ConsentimientoComponent } from './component/consentimiento/consentimiento.component';
 import { EncuestaComponent } from './component/encuesta/encuesta.component';
 import { AuthService } from './auth.service';
 import {AuthGuard } from './auth.guard';
@@ -28,7 +27,7 @@ import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.c
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,APP_ROUTING,RouterModule,HttpClientModule,ReactiveFormsModule,NgbModule ],
-  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, Panel1Component, ConsentimientoComponent, EncuestaComponent, ProfileComponent, ProfileNefroComponent],
+  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, Panel1Component, EncuestaComponent, ProfileComponent, ProfileNefroComponent],
   bootstrap:    [ AppComponent ],
   providers: [AuthService,AuthGuard]
 })

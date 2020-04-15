@@ -53,46 +53,6 @@ Si acepta  su participación en el estudio , marque Si y pasará directamente al
 </div>
 </div>
 
-
-<div class="col-md-4" *ngIf="!auth.loggedIn" > 
-     <div class="container">
-
-         <div class="card text-center">
-             <div class="card-header bg-danger text-white" >
-    Importante ¡¡¡
-             </div>
-           <div class="card-body">
-    <h5 class="card-title ">Consentimiento informado</h5>
-    <p class="card-text">Por favor, antes de realizar la encuesta, acepte el consentimiento informado.</p>
-    
-       </div>
-      <div class="card-footer text-muted">
-    Si decide no aceptar el consentimiento informado, le agradecemos el tiempo que nos ha prestado. 
-  </div>
-</div>
- </div>
-</div>
-
-</div>
-
-<div class="row">
-<div class="col-md-8" *ngIf="auth.loggedIn">
-      <div class="container">
-         <div class="card text-center">
-               <div class="card-header bg-secondary text-white">
-    <h5 class="card-title text-white" >Instrucciones cuestionario</h5>
-               </div>
-          <div class="card-body">
-    
-    <p class="card-text text-md-left"><b >El cuestionario consta de preguntas tipo test........</b></p>
-  
-   
-    <a class="nav-link btn btn-primary" [routerLink]="['/profile-nefro']">Realizar encuesta</a>
-       </div>
-  
-</div>
-</div>
-</div>
 </div>
 
 
