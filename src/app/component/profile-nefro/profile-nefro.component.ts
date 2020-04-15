@@ -2,8 +2,12 @@ import { Component } from '@angular/core';
 import { FormBuilder, Validators } from "@angular/forms";
 import {Router} from "@angular/router";
 import { AuthService } from '../../auth.service';
+import {FirebaseService} from '../../firebase.service';
 import { HttpClient } from '@angular/common/http';
 import {PruebaModel} from '../model/prueba.model';
+import { Observable } from 'rxjs';
+
+
 @Component({
   selector: 'app-profile-nefro',
   templateUrl: './profile-nefro.component.html',
@@ -91,7 +95,8 @@ dondeTrabaja: any[]=[
     private formBuilder: FormBuilder,
     private router:Router, 
     public auth: AuthService,
-    private http: HttpClient) { 
+    private http: HttpClient,
+    private firebaseService:FirebaseService) { 
   this.checkoutForm = this.formBuilder.group({
    zonas0:'',
    ocupacion1:'',
@@ -214,7 +219,11 @@ dondeTrabaja: any[]=[
 
   console.warn('Your order has been submitted', customerData);
     //this.router.navigate(['presentacion',customerData]);
-    return this.http.put(`${this.url}/DatosEncuesta.json`,customerData);
+    //return this.http.put(`${this.url}/DatosEncuesta.json`,customerData);
+    
+    
+    let peticion: Observable<any>;
+    peticion = this.firebaseService.crearHeroe( this.prueba );
     
 
 
