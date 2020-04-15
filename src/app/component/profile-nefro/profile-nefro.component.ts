@@ -3,7 +3,7 @@ import { FormBuilder, Validators } from "@angular/forms";
 import {Router} from "@angular/router";
 import { AuthService } from '../../auth.service';
 import { HttpClient } from '@angular/common/http';
-import {PruevaModel} from '../.model/prueba.model';
+import {PruebaModel} from '../model/prueba.model';
 @Component({
   selector: 'app-profile-nefro',
   templateUrl: './profile-nefro.component.html',
@@ -14,6 +14,9 @@ export class ProfileNefroComponent  {
   datos:any[]=[];
 cubierto: boolean;
 checkoutForm: any;
+prueba = new PruebaModel();
+
+
 private url = 'https://encuestacovid19emocional.firebaseio.com';
 
   zonas: any[]=[
