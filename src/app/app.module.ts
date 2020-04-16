@@ -28,7 +28,7 @@ import { ProfileComponent } from './component/profile/profile.component';
 import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.component';
 import { FirebaseService } from './firebase.service';
 import { PaginaFinalComponent } from './component/pagina-final/pagina-final.component';
-import { environment } from './environments/environment';
+import { environment } from '../environments/environment';
 
 
 
