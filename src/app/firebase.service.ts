@@ -88,7 +88,7 @@ export class FirebaseService {
    interPsico603: value.interPsico603 ,
    terapia604: value.terapia604 ,
    epiApropiado61: value.epiApropiado61 ,
-   noPreparado62:value.epiApropiado6,
+   noPreparado62:value. noPreparado62,
    faltaInfo63: value.faltaInfo63 ,
    cambipProtocolo64: value.cambipProtocolo64 ,
    preocupacion65: value.preocupacion65 ,
