@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { PruebaModel } from '../../model/prueba.model';
+import { PruebaModel } from '../model/prueba.model';
 import { map, delay } from 'rxjs/operators';
+// Constantes produccion
+
 
 
 @Injectable({
