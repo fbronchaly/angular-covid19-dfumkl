@@ -190,6 +190,14 @@ dondeTrabaja: any[]=[
   onSubmit(customerData) {
   console.log ( customerData.zonas);
 
+  this.firebaseService.createUser(customerData)
+	.then(
+	  res => {
+	   console.log ('Datos envidados');
+	   
+	  }
+	)
+
   if (customerData.matPsico === true){
     customerData.matPsico = 1;
   }else{
