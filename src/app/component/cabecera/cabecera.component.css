@@ -3,7 +3,7 @@
   background: rgb(251, 252, 252);
   margin: 0 auto 10px;
   border-radius: 0;
-  background-image: url("https://cdn.jsdelivr.net/gh/fbronchaly/angular-covid19-ympezx@master/src/app/component/shared/covid.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/fbronchaly/angular-covid19-ympezx@master/src/app/component/shared/cabecera-covid19con.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
