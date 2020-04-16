@@ -9,7 +9,7 @@ import { PaginaFinalComponent } from './component/pagina-final/pagina-final.comp
 
 const APP_ROUTES: Routes = [
   { path: 'investigadoras', component: Panel1Component },
-   { path: 'encuesta', component: EncuestaComponent },
+   { path: 'encuesta', component: EncuestaComponent,canActivate: [AuthGuard] },
    { path: 'paco', component:ProfileNefroComponent },
    { path: 'pagina-final', component:PaginaFinalComponent },
     { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },

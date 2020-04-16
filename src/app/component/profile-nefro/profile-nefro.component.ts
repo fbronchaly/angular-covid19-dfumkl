@@ -21,6 +21,7 @@ checkoutForm: any;
 prueba = new PruebaModel();
 
 
+
 private url = 'https://encuestacovid19emocional.firebaseio.com';
 
   zonas: any[]=[
@@ -96,7 +97,10 @@ dondeTrabaja: any[]=[
     private router:Router, 
     public auth: AuthService,
     private http: HttpClient,
-    private firebaseService:FirebaseService) { 
+    private firebaseService:FirebaseService,
+     
+    
+    ) { 
   this.checkoutForm = this.formBuilder.group({
    zonas0:'',
    ocupacion1:'',
@@ -189,14 +193,9 @@ dondeTrabaja: any[]=[
   
   onSubmit(customerData) {
   console.log ( customerData.zonas);
+   
 
-  this.firebaseService.createUser(customerData)
-	.then(
-	  res => {
-	   console.log ('Datos envidados');
-	   
-	  }
-	)
+ 
 
   if (customerData.matPsico === true){
     customerData.matPsico = 1;
@@ -222,7 +221,13 @@ dondeTrabaja: any[]=[
   }
 
   
-
+this.firebaseService.createUser(customerData)
+	.then(
+	  res => {
+	   console.log ('Datos envidados');
+	   
+	  }
+	)
 
 
   console.warn('Your order has been submitted', customerData);
