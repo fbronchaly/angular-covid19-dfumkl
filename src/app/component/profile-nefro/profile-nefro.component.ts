@@ -107,6 +107,7 @@ dondeTrabaja: any[]=[
    gener2:'',
    edad3:'',
    ecivil4:'',
+   ecivil41:'',
    dondeTrabaja5:'',
    areasTrabajoCovid6:'',
    areasTrabajoCovid611:'',
@@ -270,11 +271,17 @@ if (customerData.areasTrabajoCovid6 === true){
   }
 
    if (customerData.areasTrabajoCovid617 === true){
-    customerData.areasTrabajoCovid617  = ;
+    customerData.areasTrabajoCovid617  = 8;
   }else{
     customerData.areasTrabajoCovid617  = 0;
   }
-  
+  if (customerData.areasTrabajoCovid618 === true){
+    customerData.areasTrabajoCovid618  = 9;
+  }else{
+    customerData.areasTrabajoCovid618  = 0;
+  }
+
+
 this.firebaseService.createUser(customerData)
 	.then(
 	  res => {

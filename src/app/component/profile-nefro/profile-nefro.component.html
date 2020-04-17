@@ -77,6 +77,24 @@
 </div>
 
 <div class="form-group">
+<label for="atiendeCovid"> 4.1. ¿tiene personas de riesgo a su cargo ( hijos, personas ancianas, con factores de riesgo..)?   </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "ecivil41" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="ecivil41"  id="inlineRadio3" value="1" required>
+  <label class="form-check-label" for="inlineRadio3">Si</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="ecivil41"  id="inlineRadio4" value="2" required>
+  <label class="form-check-label" for="inlineRadio4">No</label>
+</div>
+</div>
+
+
+<div class="form-group">
 <label for="dondeTrabaja"> 5. Lugar donde trabaja: </label>
 <select class="form-control" formControlName="dondeTrabaja5" required>
 <option value = {{espe.id}}  *ngFor="let espe of dondeTrabaja" >{{espe.name}}</option>

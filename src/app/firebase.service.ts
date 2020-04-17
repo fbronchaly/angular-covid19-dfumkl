@@ -28,6 +28,7 @@ export class FirebaseService {
    gener2:value.gener2 ,
    edad3:value.edad3 ,
    ecivil4:value.ecivil4 ,
+   ecivil41:value.ecivil41 ,
    dondeTrabaja5: value.dondeTrabaja5 ,
    areasTrabajoCovid6: value.areasTrabajoCovid6 ,
    areasTrabajoCovid611: value.areasTrabajoCovid611 ,
