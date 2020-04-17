@@ -227,7 +227,53 @@ dondeTrabaja: any[]=[
   }else{
     customerData.terapia = 0;
   }
+// Logica grupo 6 para cambiar de true/false a 1/0
+if (customerData.areasTrabajoCovid6 === true){
+    customerData.areasTrabajoCovid6  = 1;
+  }else{
+    customerData.areasTrabajoCovid6  = 0;
+  }
 
+  if (customerData.areasTrabajoCovid611 === true){
+    customerData.areasTrabajoCovid611  = 2;
+  }else{
+    customerData.areasTrabajoCovid611  = 0;
+
+  }
+  if (customerData.areasTrabajoCovid612 === true){
+    customerData.areasTrabajoCovid612  = 3;
+  }else{
+    customerData.areasTrabajoCovid612  = 0;
+  }
+
+  if (customerData.areasTrabajoCovid613 === true){
+    customerData.areasTrabajoCovid613  = 4;
+  }else{
+    customerData.areasTrabajoCovid613  = 0;
+  }
+
+  if (customerData.areasTrabajoCovid614 === true){
+    customerData.areasTrabajoCovid614  = 5;
+  }else{
+    customerData.areasTrabajoCovid614  = 0;
+  }
+ if (customerData.areasTrabajoCovid615 === true){
+    customerData.areasTrabajoCovid615  = 6;
+  }else{
+    customerData.areasTrabajoCovid615  = 0;
+  }
+
+   if (customerData.areasTrabajoCovid616 === true){
+    customerData.areasTrabajoCovid616  = 7;
+  }else{
+    customerData.areasTrabajoCovid616  = 0;
+  }
+
+   if (customerData.areasTrabajoCovid617 === true){
+    customerData.areasTrabajoCovid617  = ;
+  }else{
+    customerData.areasTrabajoCovid617  = 0;
+  }
   
 this.firebaseService.createUser(customerData)
 	.then(
