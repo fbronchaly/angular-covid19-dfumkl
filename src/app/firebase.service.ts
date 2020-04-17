@@ -117,6 +117,11 @@ export class FirebaseService {
    antidepresivo77: value.antidepresivo77,
    estresante78: value.estresante78,
    estresante79: value.estresante79,
+   muerteCovid80: value.muerteCovid80,
+   enfermarCovid81: value.enfermarCovid81,
+   morirCovid82: value.morirCovid82,
+   contagioQuerida83: value.contagioQuerida83,
+   
 
 
 

@@ -1954,11 +1954,59 @@ tenido molestias debido a los siguientes problemas?:
 <label for="atiendeCovid"> 79. Por favor especifique qué situación estresante:   </label>
 </div>
 
-<div className="form-group" *ngIf="checkoutForm.value.estresante78=="><textarea formControlName= "estresante79" className="form-control"  id="exampleFormControlTextarea1" rows="5" cols="40"></textarea>
-        </div>
+<div className="form-group" *ngIf="checkoutForm.value.estresante78==1"><textarea formControlName= "estresante79" className="form-control"  id="exampleFormControlTextarea1" rows="5" cols="40"></textarea>
         <div className="form-group">
         <h5> <small>Límite 250 caracteres</small></h5>
         </div>
+        </div>
+
+<div class="form-group">
+<label for="atiendeCovid"> 80.- Ha vivido   la muerte de un ser querido por COVID-19:    </label>
+</div>
+<div class="form-group">
+  <div class="form-check form-check-inline">
+  <input class="form-control pex1" formControlName= "muerteCovid80" size="1" readonly=readonly required>
+    </div>
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="radio"  formControlName="muerteCovid80"  id="inlineRadio241" value="1" required>
+  <label class="form-check-label" for="inlineRadio241">Si</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="muerteCovid80"  id="inlineRadio242" value="2" required>
+  <label class="form-check-label" for="inlineRadio242">No</label>
+</div>
+<div class="form-check form-check-inline "  >
+  <input class="form-check-input" type="radio"  formControlName="muerteCovid80"  id="inlineRadio243" value="3" required>
+  <label class="form-check-label" for="inlineRadio243">Ns/Nc</label>
+</div>
+</div>
+
+<div class="form-group">
+<label for="validationCustom01"> 81.- ¿Ha tenido miedo de enfermar por Covid-19? </label>
+<select id="validationCustom01" class="form-control" formControlName="enfermarCovid81" required>
+<option value = {{contagio.id}}  *ngFor="let ocupacio of variasCuestiones" >{{contagio.name}}</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="validationCustom01"> 82. ¿Ha tenido miedo de morir por Covid-19? </label>
+<select id="validationCustom01" class="form-control" formControlName="morirCovid82" required>
+<option value = {{contagio.id}}  *ngFor="let ocupacio of variasCuestiones" >{{contagio.name}}</option>
+</select>
+</div>
+
+
+
+<div class="form-group">
+<label for="validationCustom01"> 83. Se ha sentido culpable / angustiado por la posibilidad de que su propia exposición al COVID-19 pudiera provocar el contagio de sus personas cercanas / queridas?  </label>
+<select id="validationCustom01" class="form-control" formControlName="contagioQuerida83" required>
+<option value = {{contagio.id}}  *ngFor="let ocupacio of variasCuestiones" >{{contagio.name}}</option>
+</select>
+</div>
+
+
+
+
 
 
 <div class= "row">

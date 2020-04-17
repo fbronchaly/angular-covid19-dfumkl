@@ -90,6 +90,16 @@ dondeTrabaja: any[]=[
    {id:"2", name:"Trabaja en hospital"}
 ];
 
+variasCuestiones: any[]=[
+   {id:"1", name:"Muy poco tiempo /raramente "},
+   {id:"2", name:"Algún tiempo / algunas veces"},
+   {id:"3", name:"Gran parte del tiempo / frecuentemente "},
+   {id:"4", name:"Casi todo el tiempo / siempre "},
+   {id:"5", name:"Ns/nc"},
+];
+
+
+
 
 
   constructor(
@@ -194,9 +204,13 @@ dondeTrabaja: any[]=[
    tranquilizante76:'',
    antidepresivo77:'',
    estresante78:'',
-   estresante79:''
-   
+   estresante79:'',
+   muerteCovid80:'',
+   enfermarCovid81:'',
+   morirCovid82:'',
+   contagioQuerida83:'',
 
+  
 
     });
 
