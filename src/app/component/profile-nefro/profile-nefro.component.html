@@ -1984,14 +1984,14 @@ tenido molestias debido a los siguientes problemas?:
 <div class="form-group">
 <label for="validationCustom01"> 81.- ¿Ha tenido miedo de enfermar por Covid-19? </label>
 <select id="validationCustom01" class="form-control" formControlName="enfermarCovid81" required>
-<option value = {{contagio.id}}  *ngFor="let ocupacio of variasCuestiones" >{{contagio.name}}</option>
+<option value = {{ocupacio.id}}  *ngFor="let ocupacio of variasCuestiones" >{{ocupacio.name}}</option>
 </select>
 </div>
 
 <div class="form-group">
 <label for="validationCustom01"> 82. ¿Ha tenido miedo de morir por Covid-19? </label>
 <select id="validationCustom01" class="form-control" formControlName="morirCovid82" required>
-<option value = {{contagio.id}}  *ngFor="let ocupacio of variasCuestiones" >{{contagio.name}}</option>
+<option value = {{ocupacio.id}}  *ngFor="let ocupacio of variasCuestiones" >{{ocupacio.name}}</option>
 </select>
 </div>
 
@@ -2000,9 +2000,84 @@ tenido molestias debido a los siguientes problemas?:
 <div class="form-group">
 <label for="validationCustom01"> 83. Se ha sentido culpable / angustiado por la posibilidad de que su propia exposición al COVID-19 pudiera provocar el contagio de sus personas cercanas / queridas?  </label>
 <select id="validationCustom01" class="form-control" formControlName="contagioQuerida83" required>
-<option value = {{contagio.id}}  *ngFor="let ocupacio of variasCuestiones" >{{contagio.name}}</option>
+<option value = {{ocupacio.id}}  *ngFor="let ocupacio of variasCuestiones" >{{ocupacio.name}}</option>
 </select>
 </div>
+
+<div class="form-group">
+<label for="validationCustom01"> 84.- ¿Ha extremado las medidas de higiene más allá de los protocolos oficiales?  </label>
+<select id="validationCustom01" class="form-control" formControlName="higiene84" required>
+<option value = {{ocupacio.id}}  *ngFor="let ocupacio of variasCuestiones" >{{ocupacio.name}}</option>
+</select>
+</div>
+
+<!-- Cominzo de grupo 85 -->
+
+<div class="form-group">
+<label for="atiendeCovid"> 85-¿Cuál de estas estrategias ha utilizado frecuentemente para afrontar la situación de pandemia? Puede elegir varias opciones:   </label>
+</div>
+
+
+<div class="form-group">
+
+   
+<div class="form-check ">
+  <label for="atiendeCovid">
+ <input class="form-check-input" type="checkbox" formControlName="estrategia851" value="1" id="defaultCheck1">
+ 	1. Hablar con familiares y amigos.</label>
+</div>
+
+<div class="form-check ">
+  <label for="atiendeCovid"> 
+ <input class="form-check-input" type="checkbox" formControlName="estrategia852" value="1" id="defaultCheck1">
+ 	2.Deporte, estiramientos.  </label>
+</div>
+
+<div class="form-check">
+  <label for="atiendeCovid"> 
+ <input class="form-check-input" type="checkbox" formControlName="interPsico603" value="1" id="defaultCheck1">
+	3. Dieta saludable.  </label>
+</div>
+
+<div class="form-check">
+  <label for="atiendeCovid"> 
+ <input class="form-check-input" type="checkbox" formControlName="estrategia853" value="1" id="defaultCheck1">
+  4.Hobby  </label>
+</div>
+
+
+ 	<div class="form-check">
+  <label for="atiendeCovid"> 
+ <input class="form-check-input" type="checkbox" formControlName="estrategia854" value="1" id="defaultCheck1">
+ 	5. Actividades relajantes: lectura, escuchar música, yoga, meditación...  </label>
+</div>
+
+
+<div class="form-check">
+  <label for="atiendeCovid"> 
+ <input class="form-check-input" type="checkbox" formControlName="estrategia855" value="1" id="defaultCheck1">
+6. Planificación / estructuración de las actividades cotidianas / rutinas</label>
+</div>
+
+<div class="form-check">
+  <label for="atiendeCovid"> 
+ <input class="form-check-input" type="checkbox" formControlName="estrategia856" value="1" id="defaultCheck1">
+7.	Otras (especifique)</label>
+</div>
+
+<div className="form-group" *ngIf="checkoutForm.value.estrategia856==1"><textarea formControlName= "estrategia857" className="form-control"  id="exampleFormControlTextarea1" rows="5" cols="40"></textarea>
+        <div className="form-group">
+        <h5> <small>Límite 250 caracteres</small></h5>
+        </div>
+        </div>
+
+
+
+
+
+</div>
+
+<!-- Fin de grupo 61 -->
 
 
 

@@ -121,7 +121,15 @@ export class FirebaseService {
    enfermarCovid81: value.enfermarCovid81,
    morirCovid82: value.morirCovid82,
    contagioQuerida83: value.contagioQuerida83,
-   
+   higiene84: value.higiene84,
+  estrategia851: value.estrategia851,
+   estrategia852: value.estrategia852,
+   estrategia853: value.estrategia853,
+   estrategia854: value.estrategia854,
+   estrategia855: value.estrategia855,
+   estrategia856: value.estrategia856,
+   estrategia857: value.estrategia857,
+
 
 
 

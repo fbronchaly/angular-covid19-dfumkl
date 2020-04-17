@@ -102,6 +102,8 @@ variasCuestiones: any[]=[
 
 
 
+
+
   constructor(
     private formBuilder: FormBuilder,
     private router:Router, 
@@ -209,6 +211,17 @@ variasCuestiones: any[]=[
    enfermarCovid81:'',
    morirCovid82:'',
    contagioQuerida83:'',
+   higiene84:'',
+   estrategia851:'',
+   estrategia852:'',
+   estrategia853:'',
+   estrategia854:'',
+   estrategia855:'',
+   estrategia856:'',
+   estrategia857:'',
+   
+
+
 
   
 
