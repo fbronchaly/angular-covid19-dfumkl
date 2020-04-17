@@ -192,6 +192,12 @@ dondeTrabaja: any[]=[
    brote73:'',
    tratamientoPsi74:'',
    consumo75:'',
+   tranquilizante76:'',
+   antidepresivo77:'',
+   estresante78:''
+   
+
+
 
 
 

@@ -46,7 +46,7 @@ export class FirebaseService {
    compaCovid11: value.compaCovid11 ,
    conviveCovid12: value.conviveCovid12 ,
    youCovid1211: value.youCovid121,
-   homeCovid122: value.youCovid122,
+   homeCovid122: value.homeCovid122,
    difSueno13: value.difSueno13 ,
    difPerSueno14: value.difPerSueno14 ,
    despTemprano15: value.despTemprano15 ,
@@ -113,6 +113,11 @@ export class FirebaseService {
    brote73: value.brote73,
    tratamientoPsi74: value.tratamientoPsi74,
    consumo75: value.consumo75,
+   tranquilizante76: value.tranquilizante76,
+   antidepresivo77: value.antidepresivo77,
+   estresante78: value.estresante78
+
+
 
    
   });
