@@ -194,8 +194,10 @@ dondeTrabaja: any[]=[
    consumo75:'',
    tranquilizante76:'',
    antidepresivo77:'',
-   estresante78:''
+   estresante78:'',
+   estresante79:''
    
+
 
 
 

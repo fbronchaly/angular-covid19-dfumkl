@@ -115,7 +115,8 @@ export class FirebaseService {
    consumo75: value.consumo75,
    tranquilizante76: value.tranquilizante76,
    antidepresivo77: value.antidepresivo77,
-   estresante78: value.estresante78
+   estresante78: value.estresante78,
+   estresante79: value.estresante79,
 
 
 
