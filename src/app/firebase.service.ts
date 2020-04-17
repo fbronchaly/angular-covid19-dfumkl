@@ -45,6 +45,7 @@ export class FirebaseService {
    vecinoCovid10: value.vecinoCovid10 ,
    compaCovid11: value.compaCovid11 ,
    conviveCovid12: value.conviveCovid12 ,
+   youCovid1211: value.youCovid121,
    difSueno13: value.difSueno13 ,
    difPerSueno14: value.difPerSueno14 ,
    despTemprano15: value.despTemprano15 ,
@@ -108,7 +109,10 @@ export class FirebaseService {
    dificultadEpi70: value.dificultadEpi70 ,
    aislamiento71: value.aislamiento71 ,
    terapeutica72: value.terapeutica72 ,
-   brote73: value.brote73 
+   brote73: value.brote73,
+   tratamientoPsi74: value.tratamientoPsi74,
+   consumo75: value.consumo75,
+   
    
   });
 }

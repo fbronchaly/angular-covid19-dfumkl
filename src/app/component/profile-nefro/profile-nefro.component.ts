@@ -124,6 +124,7 @@ dondeTrabaja: any[]=[
    vecinoCovid10:'',
    compaCovid11:'',
    conviveCovid12:'',
+   youCovid121:'',
    difSueno13:'',
    difPerSueno14:'',
    despTemprano15:'',
@@ -187,7 +188,9 @@ dondeTrabaja: any[]=[
    dificultadEpi70:'',
    aislamiento71:'',
    terapeutica72:'',
-   brote73:''
+   brote73:'',
+   tratamientoPsi74:'',
+   consumo75:'',
 
 
 
