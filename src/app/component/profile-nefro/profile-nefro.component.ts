@@ -125,6 +125,7 @@ dondeTrabaja: any[]=[
    compaCovid11:'',
    conviveCovid12:'',
    youCovid121:'',
+   homeCovid122:'',
    difSueno13:'',
    difPerSueno14:'',
    despTemprano15:'',
