@@ -22,7 +22,7 @@ prueba = new PruebaModel();
 
 
 
-private url = 'https://encuestacovid19emocional.firebaseio.com';
+
 
   zonas: any[]=[
     {id:"1", comunidad:"Andalucía "},
@@ -88,7 +88,7 @@ areasTrabajoCovid: any[]=[
 dondeTrabaja: any[]=[
    {id:"1", name:"Trabaja en centro de diálisis"},
    {id:"2", name:"Trabaja en hospital"}
-]
+];
 
 
 
@@ -98,9 +98,8 @@ dondeTrabaja: any[]=[
     public auth: AuthService,
     private http: HttpClient,
     private firebaseService:FirebaseService,
-     
-    
     ) { 
+       
   this.checkoutForm = this.formBuilder.group({
    zonas0:'',
    ocupacion1:'',
@@ -199,17 +198,25 @@ dondeTrabaja: any[]=[
    
 
 
-
-
-
-
     });
 
 
 
+    
 
 
     }
+
+  abrirBox() {
+    console.log(this.checkoutForm.estresante78);
+    if (this.checkoutForm.estresante78 == "1" ){
+      return true;
+    }else {
+      return false;
+    }
+  };
+
+  
 
   
   onSubmit(customerData) {
@@ -305,7 +312,7 @@ this.firebaseService.createUser(customerData)
 
   console.warn('Your order has been submitted', customerData);
     //this.router.navigate(['presentacion',customerData]);
-    //return this.http.put(`${this.url}/DatosEncuesta.json`,customerData);
+    
     
     
    this.router.navigate(['/pagina-final']);
@@ -313,6 +320,9 @@ this.firebaseService.createUser(customerData)
 
 
   }
+
+
+   
   
 
 }
