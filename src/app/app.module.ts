@@ -21,7 +21,7 @@ import { CabeceraComponent } from './component/cabecera/cabecera.component';
 import { BodyComponent } from './component/body/body.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { Panel1Component } from './component/panel1/panel1.component';
-import { EncuestaComponent } from './component/encuesta/encuesta.component';
+
 
 import {AuthGuard } from './auth.guard';
 import { ProfileComponent } from './component/profile/profile.component';
@@ -29,7 +29,7 @@ import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.c
 import { FirebaseService } from './firebase.service';
 import { PaginaFinalComponent } from './component/pagina-final/pagina-final.component';
 import { environment } from '../environments/environment';
-import { RegistroComponent } from './component/registro/registro.component';
+
 
 
 
@@ -40,7 +40,7 @@ import { RegistroComponent } from './component/registro/registro.component';
 @NgModule({
   imports:      [ BrowserModule, FormsModule,APP_ROUTING,RouterModule,HttpClientModule,ReactiveFormsModule,NgbModule,CookieLawModule,BrowserAnimationsModule,AngularFireModule.initializeApp(environment.firebase),AngularFirestoreModule  ],
  
-  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, Panel1Component, EncuestaComponent, ProfileComponent, ProfileNefroComponent, PaginaFinalComponent, RegistroComponent, LoginComponent, HomeComponent],
+  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, Panel1Component, ProfileComponent, ProfileNefroComponent, PaginaFinalComponent],
  
   bootstrap:    [ AppComponent ],
  

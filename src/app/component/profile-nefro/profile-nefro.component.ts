@@ -3,7 +3,6 @@ import { FormBuilder, Validators } from "@angular/forms";
 import {Router} from "@angular/router";
 import {FirebaseService} from '../../firebase.service';
 import { HttpClient } from '@angular/common/http';
-import {PruebaModel} from '../model/prueba.model';
 import { Observable } from 'rxjs';
 
 
@@ -17,10 +16,6 @@ export class ProfileNefroComponent  {
   datos:any[]=[];
 cubierto: boolean;
 checkoutForm: any;
-prueba = new PruebaModel();
-
-
-
 
 
   zonas: any[]=[
@@ -106,7 +101,6 @@ variasCuestiones: any[]=[
   constructor(
     private formBuilder: FormBuilder,
     private router:Router, 
-    public auth: AuthService,
     private http: HttpClient,
     private firebaseService:FirebaseService,
     ) { 
