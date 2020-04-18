@@ -44,6 +44,6 @@ import { HomeComponent } from './component/home/home.component';
  
   bootstrap:    [ AppComponent ],
  
-  providers: [AuthService,AuthGuard, FirebaseService]
+  providers: [AuthGuard, FirebaseService]
 })
 export class AppModule { }
