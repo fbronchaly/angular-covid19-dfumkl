@@ -5,6 +5,8 @@ import { ProfileComponent } from './component/profile/profile.component';
 import {AuthGuard } from './auth.guard';
 import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.component';
 import { PaginaFinalComponent } from './component/pagina-final/pagina-final.component';
+import { RegistroComponent } from './pages/registro/registro.component';
+
 
 
 const APP_ROUTES: Routes = [
@@ -14,6 +16,7 @@ const APP_ROUTES: Routes = [
    { path: 'pagina-final', component:PaginaFinalComponent },
     { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
      { path: 'profile-nefro', component: ProfileNefroComponent, canActivate: [AuthGuard] },
+      { path: 'registro', component: RegistroComponent },
      
      
    

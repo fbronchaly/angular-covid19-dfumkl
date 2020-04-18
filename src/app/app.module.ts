@@ -29,6 +29,9 @@ import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.c
 import { FirebaseService } from './firebase.service';
 import { PaginaFinalComponent } from './component/pagina-final/pagina-final.component';
 import { environment } from '../environments/environment';
+import { RegistroComponent } from './component/registro/registro.component';
+import { LoginComponent } from './component/login/login.component';
+import { HomeComponent } from './component/home/home.component';
 
 
 
@@ -37,7 +40,7 @@ import { environment } from '../environments/environment';
 @NgModule({
   imports:      [ BrowserModule, FormsModule,APP_ROUTING,RouterModule,HttpClientModule,ReactiveFormsModule,NgbModule,CookieLawModule,BrowserAnimationsModule,AngularFireModule.initializeApp(environment.firebase),AngularFirestoreModule  ],
  
-  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, Panel1Component, EncuestaComponent, ProfileComponent, ProfileNefroComponent, PaginaFinalComponent],
+  declarations: [ AppComponent, HelloComponent, CabeceraComponent, BodyComponent, FooterComponent, Panel1Component, EncuestaComponent, ProfileComponent, ProfileNefroComponent, PaginaFinalComponent, RegistroComponent, LoginComponent, HomeComponent],
  
   bootstrap:    [ AppComponent ],
  
