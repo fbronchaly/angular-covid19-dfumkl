@@ -30,8 +30,8 @@ import { FirebaseService } from './firebase.service';
 import { PaginaFinalComponent } from './component/pagina-final/pagina-final.component';
 import { environment } from '../environments/environment';
 import { RegistroComponent } from './component/registro/registro.component';
-import { LoginComponent } from './component/login/login.component';
-import { HomeComponent } from './component/home/home.component';
+
+
 
 
 
