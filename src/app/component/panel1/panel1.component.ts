@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../auth.service';
+
 
 
 @Component({
@@ -10,7 +10,7 @@ import { AuthService } from '../../auth.service';
 export class Panel1Component implements OnInit {
 
 
-  constructor(public auth:AuthService) { }
+  constructor() { }
 
   ngOnInit() {
   }

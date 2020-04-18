@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../../auth.service';
 import { FormBuilder, Validators } from "@angular/forms";
 import {Router} from "@angular/router";
 
@@ -71,8 +70,7 @@ ecivils: any[]=[
 
   constructor(
     private formBuilder: FormBuilder,
-    private router:Router, 
-    public auth: AuthService) { 
+    private router:Router ) { 
  this.checkoutForm = this.formBuilder.group({
    zonas:'',
    ocupacion:'',

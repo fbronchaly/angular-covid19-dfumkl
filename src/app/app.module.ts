@@ -22,7 +22,7 @@ import { BodyComponent } from './component/body/body.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { Panel1Component } from './component/panel1/panel1.component';
 import { EncuestaComponent } from './component/encuesta/encuesta.component';
-import { AuthService } from './auth.service';
+
 import {AuthGuard } from './auth.guard';
 import { ProfileComponent } from './component/profile/profile.component';
 import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.component';
