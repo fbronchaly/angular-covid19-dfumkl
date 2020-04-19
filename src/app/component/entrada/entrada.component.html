@@ -1,0 +1,28 @@
+  <div class="card text-center">
+             
+           <div class="card-body">
+    <h5 class="card-title ">Consentimiento informado</h5>
+    <div class="card-text">
+<div class= "row">
+  
+  
+
+
+<button type="button w-80" [disabled]="clicked" (click)="actionMethod(); clicked = true;" class="btn btn-primary w-90 button">He leido la hoja de información sobre el estudio. </button>
+
+<button type="button w-80" [disabled]="clicked" (click)="actionMethod(); clicked = true;" class="btn btn-primary w-90 button">He recibido suficiente información sobre el estudio. </button>
+
+<button type="button w-80" [disabled]="clicked" (click)="actionMethod(); clicked = true;" class="btn btn-primary w-90 button">Comprendo que mi participación es voluntaria. </button>
+
+<button type="button w-80" [disabled]="clicked" (click)="actionMethod(); clicked = true;" class="btn btn-primary w-90 button"><a>Comprendo que puedo retirarme del estudio:</a><ol>
+                                    <li>Cuando quiera.</li>
+                                    <li> Sin dar explicaciones.</li> 
+                                    <li> Sin que esto repercuta en mi atención médica.</li></ol> </button>
+
+    </div>
+
+       </div>
+      <div class="card-footer text-muted">
+    Si decide no aceptar el consentimiento informado, le agradecemos el tiempo que nos ha prestado. 
+  </div>
+</div>

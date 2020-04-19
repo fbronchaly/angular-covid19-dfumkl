@@ -4,6 +4,7 @@ import { ProfileComponent } from './component/profile/profile.component';
 import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.component';
 import { PaginaFinalComponent } from './component/pagina-final/pagina-final.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { EntradaComponent } from './component/entrada/entrada.component';
 
 
 
@@ -15,6 +16,7 @@ const APP_ROUTES: Routes = [
     { path: 'profile', component: ProfileComponent },
      { path: 'profile-nefro', component: ProfileNefroComponent },
       { path: 'footer', component: FooterComponent },
+      { path: 'entrada', component: EntradaComponent },
   
      
      

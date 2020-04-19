@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { EntradaComponent } from '../entrada/entrada.component';
 
 
 
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 export class Panel1Component  {
 
 
-  constructor(private router: Router) {
+  constructor(private router: Router ) {
    }
 
 
