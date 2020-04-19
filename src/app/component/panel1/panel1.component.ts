@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 
@@ -10,11 +11,16 @@ import { Component, OnInit } from '@angular/core';
 export class Panel1Component implements OnInit {
 
 
-  constructor() { }
+  constructor(private router: Router) {
+   }
 
   ngOnInit() {
-  }
+    }
 
- 
+  
+    salto(){
+
+    this.router.navigate(['/profile-nefro']);
+}
 
 }
