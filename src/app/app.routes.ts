@@ -1,7 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 import { Panel1Component } from './component/panel1/panel1.component';
 import { ProfileComponent } from './component/profile/profile.component';
-import {AuthGuard } from './auth.guard';
 import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.component';
 import { PaginaFinalComponent } from './component/pagina-final/pagina-final.component';
 

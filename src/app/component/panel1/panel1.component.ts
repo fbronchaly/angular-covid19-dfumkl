@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -8,17 +8,15 @@ import { Router } from '@angular/router';
   templateUrl: './panel1.component.html',
   styleUrls: ['./panel1.component.css']
 })
-export class Panel1Component implements OnInit {
+export class Panel1Component  {
 
 
   constructor(private router: Router) {
    }
 
-  ngOnInit() {
-    }
 
   
-    salto(){
+    public otra(){
 
     this.router.navigate(['/profile-nefro']);
 }
