@@ -3,6 +3,7 @@ import { Panel1Component } from './component/panel1/panel1.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import { ProfileNefroComponent } from './component/profile-nefro/profile-nefro.component';
 import { PaginaFinalComponent } from './component/pagina-final/pagina-final.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 
 
@@ -13,6 +14,7 @@ const APP_ROUTES: Routes = [
    { path: 'pagina-final', component:PaginaFinalComponent },
     { path: 'profile', component: ProfileComponent },
      { path: 'profile-nefro', component: ProfileNefroComponent },
+      { path: 'footer', component: FooterComponent },
   
      
      

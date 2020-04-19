@@ -226,7 +226,7 @@ variasCuestiones: any[]=[
 
 
     }
-
+/*
   abrirBox() {
     console.log(this.checkoutForm.estresante78);
     if (this.checkoutForm.estresante78 == "1" ){
@@ -236,7 +236,7 @@ variasCuestiones: any[]=[
     }
   };
 
-  
+  */
 
   
   onSubmit(customerData) {

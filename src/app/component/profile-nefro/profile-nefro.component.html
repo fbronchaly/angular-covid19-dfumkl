@@ -3,7 +3,7 @@
   <div class="col-md-12">
 
 <main>
-  <div class="row" >
+  <div>
 
 
    <div class="col-md-11">
@@ -22,243 +22,58 @@
 </div>
 
 <!-- Comienza form con ancho 10 -->
-    <div class="col-md-10">
+    
 
-<form class="00"[formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
-
-
-
+  <div class="col-md-12">
 <div class="form-group">
-<label><b> Comunidad autónoma donde trabaja: </b></label>
-<select id="zonas0" class="form-control" formControlName="zonas0">
-<option value = {{zona.id}}  *ngFor="let zona of zonas" >{{zona.comunidad}}</option>
-</select>
+  <p> Hola </p>
 </div>
 
 <div class="form-group">
-<label > 1. ¿ Cual es su ocupación? </label>
-<select  class="form-control" formControlName="ocupacion1">
-<option value = {{ocupacio.id}}  *ngFor="let ocupacio of ocupaciones" >{{ocupacio.name}}</option>
-</select>
-</div>
-
-
-<div class="form-group">
-<label > 2. Genero  </label>
+  <p> Hola </p>
 </div>
 <div class="form-group">
-<div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "gener2" size="1" readonly=readonly required>
-  </div>
-
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio"  formControlName="gener2"  id="gener01" value="1" required>
-  <label class="form-check-label" >Hombre</label>
-</div>
-
-<div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="gener2"  id="gener0" value="2" required>
-  <label class="form-check-label" >Mujer</label>
-</div>
-</div>
-
-<div class="form-group">
-<label> 3. Edad </label>
-<select class="form-control" formControlName="edad3" required>
-<option value = {{edad.id}}  *ngFor="let edad of edades" >{{edad.name}}</option>
-</select>
-</div>
-
-<div class="form-group">
-<label >4.  Estado civil </label>
-<select class="form-control" formControlName="ecivil4" required>
-<option value = {{ecivil.id}}  *ngFor="let ecivil of ecivils" >{{ecivil.name}}</option>
-</select>
-</div>
-
-<div class="form-group">
-<label for="atiendeCovid"> 4.1. ¿tiene personas de riesgo a su cargo ( hijos, personas ancianas, con factores de riesgo..)?   </label>
+  <p> Hola </p>
 </div>
 <div class="form-group">
-  <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "ecivil41" size="1" readonly=readonly required>
-    </div>
-<div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="ecivil41"  id="" value="1" required>
-  <label class="form-check-label" >Si</label>
-</div>
-<div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="ecivil41"  id="" value="2" required>
-  <label class="form-check-label" >No</label>
-</div>
-</div>
-
-
-<div class="form-group">
-<label > 5. Lugar donde trabaja: </label>
-<select class="form-control" formControlName="dondeTrabaja5" required>
-<option value = {{espe.id}}  *ngFor="let espe of dondeTrabaja" >{{espe.name}}</option>
-</select>
-</div>
-
-<div class="form-group">
-<label ><b>6. Areas donde ha trabajado durante el periodo de pandemia: </b></label>
-</div>
-
-
-<div class="form-group">
-
-   
-<div class="form-check ">
-  <label >
- <input class="form-check-input" type="checkbox" formControlName="areasTrabajoCovid6" value="1" id="defaultCheck1">
- 	Planta COVID  </label>
-</div>
-
-
-<div class="form-check ">
-  <label> 
- <input class="form-check-input" type="checkbox" formControlName="areasTrabajoCovid611" value="1" id="defaultCheck1">
- Planta NO COVID </label>
-</div>
-
-<div class="form-check">
-  <label > 
- <input class="form-check-input" type="checkbox" formControlName="areasTrabajoCovid612" value="1" id="defaultCheck1">
-  Urgencias  </label>
-</div>
-
-<div class="form-check">
-  <label for=""> 
- <input class="form-check-input" type="checkbox" formControlName="areasTrabajoCovid613" value="1" id="defaultCheck1">
- 	Cuidados intensivos  </label>
-</div>
-
-<div class="form-check">
-  <label > 
- <input class="form-check-input" type="checkbox" formControlName="areasTrabajoCovid614" value="1" id="defaultCheck1">
- 	Reanimación  </label>
-</div>
-<div class="form-check">
-  <label for=""> 
- <input class="form-check-input" type="checkbox" formControlName="areasTrabajoCovid615" value="1" id="defaultCheck1">
- 	Hemodiálisis  </label>
-</div>
-<div class="form-check">
-  <label for=""> 
- <input class="form-check-input" type="checkbox" formControlName="areasTrabajoCovid616" value="1" id="defaultCheck1">
- 	Teletrabajo </label>
-</div>
-<div class="form-check">
-  <label > 
- <input class="form-check-input" type="checkbox" formControlName="areasTrabajoCovid617" value="1" id="defaultCheck1">
- 	Guardias  </label>
-</div>
-<div class="form-check">
-  <label for=""> 
- <input class="form-check-input" type="checkbox" formControlName="areasTrabajoCovid618" value="1" id="defaultCheck1">
- 	Otras  </label>
-</div>
-
-</div>
-
-
-
-
-<div class="form-group">
-<label > 7. ¿Ha atendido pacientes diagnosticados de COVID-19?   </label>
-</div>
-
-<div class="form-group">
-  <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "atiendeCovid7" size="1" readonly=readonly required>
-    </div>
-<div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="atiendeCovid7"  id="" value="1" required>
-  <label class="form-check-label" >Si</label>
-</div>
-<div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="atiendeCovid7"  id="" value="2" required>
-  <label class="form-check-label" >No</label>
-</div>
+  <p> Hola </p>
 </div>
 <div class="form-group">
-<label for=""> 8. ¿Tiene en su familia alguien que haya sido diagnosticado de COVID-19?    </label>
-</div>
-
-<div class="form-group">
-  <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "familiarCovid8" size="1" readonly=readonly required>
-    </div>
-<div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="familiarCovid8"  id="" value="1" required>
-  <label class="form-check-label" >Si</label>
-</div>
-<div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="familiarCovid8"  id="" value="2" required>
-  <label class="form-check-label" >No</label>
-</div>
-</div>
-
-<div class="form-group">
-<label for="atiendeCovid"> 9. ¿Alguno de sus amigos han sido diagnosticados de COVID 19?     </label>
+  <p> Hola </p>
 </div>
 <div class="form-group">
-  <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "amigoCovid9" size="1" readonly=readonly required>
-    </div>
-<div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="amigoCovid9"  id="" value="1" required>
-  <label class="form-check-label" >Si</label>
-</div>
-<div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="amigoCovid9"  id="" value="2" required>
-  <label class="form-check-label" >No</label>
-</div>
-</div>
-
-<div class="form-group">
-<label for="atiendeCovid"> 10. ¿Tiene algún vecino que haya sido diagnosticado de COVID 19?     </label>
+  <p> Hola </p>
 </div>
 <div class="form-group">
-  <div class="form-check form-check-inline">
-  <input class="form-control pex1" formControlName= "vecinoCovid10" size="1" readonly=readonly required>
-    </div>
-<div class="form-check form-check-inline">
- <input class="form-check-input" type="radio"  formControlName="vecinoCovid10"  id="" value="1" required>
-  <label class="form-check-label" >Si</label>
+  <p> Hola </p>
 </div>
-<div class="form-check form-check-inline "  >
-  <input class="form-check-input" type="radio"  formControlName="vecinoCovid10"  id="" value="2" required>
-  <label class="form-check-label" >No</label>
+<div class="form-group">
+  <p> Hola </p>
 </div>
+<div class="form-group">
+  <p> Hola </p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</form>
-
-    </div>
-
-
-
+<div class="form-group">
+  <p> Hola </p>
+</div>
+<div class="form-group">
+  <p> Hola </p>
+</div>
+<div class="form-group">
+  <p> Hola </p>
+</div>
+<div class="form-group">
+  <p> Hola </p>
+</div>
+<div class="form-group">
+  <p> Hola </p>
+</div>
+<div class="form-group">
+  <p> Hola </p>
+</div>
  
   </div>
-
+  </div>
 </main>
   </div>
  
