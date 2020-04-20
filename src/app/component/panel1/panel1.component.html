@@ -62,7 +62,7 @@ Si acepta  su participación en el estudio , marque Si y pasará directamente al
     Importante ¡¡¡
              </div>
            <div class="card-body">
-    <h5 class="card-title ">Consentimiento informado</h5>
+  
     <p class="card-text">Por favor, antes de realizar la encuesta, acepte el consentimiento informado.</p>
 
        </div>
@@ -77,23 +77,23 @@ Si acepta  su participación en el estudio , marque Si y pasará directamente al
 
   
 </div>
- <div class="card text-center">
+ <div  class="card text-center  cabeceraConsent">
              
            <div class="card-body">
-    <h5 class="card-title ">Consentimiento informado</h5>
+    <h5 class="card-title "><b>Consentimiento informado</b></h5>
     <div class="card-text">
 <div class= "row">
   
   
 
 
-<button type="button w-80" [disabled]="clicked" (click)="actionMethod(); clicked = true;" class="btn btn-primary w-90 button">He leido la hoja de información sobre el estudio. </button>
+<button type="button " (click)="actionMethod1()" class="btn btn-primary w-90  button" id = "boton1Cons">He leido la hoja de información sobre el estudio. </button>
 
-<button type="button w-80" [disabled]="clicked" (click)="actionMethod(); clicked = true;" class="btn btn-primary w-90 button">He recibido suficiente información sobre el estudio. </button>
+<button type="button"  (click)="actionMethod2()" class="btn btn-primary w-90 button" id = "boton1Cons2">He recibido suficiente información sobre el estudio. </button>
 
-<button type="button w-80" [disabled]="clicked" (click)="actionMethod(); clicked = true;" class="btn btn-primary w-90 button">Comprendo que mi participación es voluntaria. </button>
+<button type="button"  (click)="actionMethod3()" class="btn btn-primary w-90 button" id = "boton1Cons3">Comprendo que mi participación es voluntaria. </button>
 
-<button type="button w-80" [disabled]="clicked" (click)="actionMethod(); clicked = true;" class="btn btn-primary w-90 button"><a>Comprendo que puedo retirarme del estudio:</a><ol>
+<button type="button" (click)="actionMethod4()" class="btn btn-primary w-90 button" id = "boton1Cons4"><a>Comprendo que puedo retirarme del estudio: </a><ol>
                                     <li>Cuando quiera.</li>
                                     <li> Sin dar explicaciones.</li> 
                                     <li> Sin que esto repercuta en mi atención médica.</li></ol> </button>
